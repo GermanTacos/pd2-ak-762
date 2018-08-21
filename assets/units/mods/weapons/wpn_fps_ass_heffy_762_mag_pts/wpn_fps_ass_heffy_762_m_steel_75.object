@@ -1,0 +1,7 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/steel_75" orientation_object="rp_wpn_fps_lmg_rpk_m_drum" />
+    <graphics>
+        <object enabled="true" name="g_mag" />
+        <object enabled="false" name="g_bullet_1" />
+    </graphics>
+</dynamic_object>
