@@ -101,6 +101,37 @@ if ( self.heffy_762 ) then
         position = Vector3( 0, -14.4, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
+	
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_fo_m70_std", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, 1.5, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_fo_m70_m92", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -9.5, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_fo_m70_akmsu", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -17, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_fo_m70_rk62", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -12, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_fo_m70_ak104", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -9, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_fo_m70_tabuk", 
         base_a_obj = "a_body", 
@@ -235,13 +266,13 @@ if ( self.heffy_762 ) then
 	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_ns_akmsu_tabuk", 
         base_a_obj = "a_ns", 
-        position = Vector3( 0, 9.4, 0 ), 
+        position = Vector3( 0, 9.5, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_ns_akmsu_rpk", 
         base_a_obj = "a_ns", 
-        position = Vector3( 0, 20.9, 0 ), 
+        position = Vector3( 0, 21, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_762", {
@@ -253,19 +284,62 @@ if ( self.heffy_762 ) then
 	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_ns_akmsu_md90", 
         base_a_obj = "a_ns", 
-        position = Vector3( 0, -10.2, 0 ), 
+        position = Vector3( 0, -10.1, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_ns_akmsu_ak104", 
         base_a_obj = "a_ns", 
-        position = Vector3( 0, -9.2, 0 ), 
+        position = Vector3( 0, -9.1, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_ns_akmsu_rk62", 
         base_a_obj = "a_ns", 
-        position = Vector3( 0, -3, 0 ), 
+        position = Vector3( 0, -2.9, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_ns_m70_std", 
+        base_a_obj = "a_ns", 
+        position = Vector3( 0, 6.8, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_ns_m70_tabuk", 
+        base_a_obj = "a_ns", 
+        position = Vector3( 0, 20.1, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_ns_m70_rpk", 
+        base_a_obj = "a_ns", 
+        position = Vector3( 0, 31.6, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_ns_m70_akmsu", 
+        base_a_obj = "a_ns", 
+        position = Vector3( 0, -6.5, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_ns_m70_md90", 
+        base_a_obj = "a_ns", 
+        position = Vector3( 0, 0.5, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_ns_m70_ak104", 
+        base_a_obj = "a_ns", 
+        position = Vector3( 0, 1.5, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_ns_m70_rk62", 
+        base_a_obj = "a_ns", 
+        position = Vector3( 0, 7.7, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 --- Stocks ---

@@ -1,6 +1,0 @@
-s<unit type="wpn" slot="1">
-	<object file="units/mods/weapons/wpn_fps_ass_heffy_762_shared_pts/wpn_fps_ass_heffy_762_fo_ins" />
-	<extensions>
-		<extension name="unit_data" class="ScriptUnitData" />
-	</extensions>
-</unit>
