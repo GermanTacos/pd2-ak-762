@@ -123,8 +123,7 @@ local all_ak47stock = {
 	"wpn_fps_ass_heffy_762_st_amd63",
 	"wpn_fps_ass_heffy_762_st_amd65",
 	"wpn_fps_ass_heffy_762_st_tabuk",
-	"wpn_fps_ass_heffy_762_st_rk62",
-	"wpn_fps_ass_heffy_762_st_moe"
+	"wpn_fps_ass_heffy_762_st_rk62"
 }
 local akmstock = {
 	"wpn_fps_ass_heffy_762_st_akm",
@@ -140,8 +139,7 @@ local akmstock = {
 	"wpn_fps_ass_heffy_762_st_amd63",
 	"wpn_fps_ass_heffy_762_st_amd65",
 	"wpn_fps_ass_heffy_762_st_tabuk",
-	"wpn_fps_ass_heffy_762_st_rk62",
-	"wpn_fps_ass_heffy_762_st_moe"
+	"wpn_fps_ass_heffy_762_st_rk62"
 }
 --- Stock Pads ---
 local akmstockpad = {
@@ -167,8 +165,7 @@ local all_ak47lowerforegrip = {
 	"wpn_fps_ass_heffy_762_lfg_amd63",
 	"wpn_fps_ass_heffy_762_lfg_m70",
 	"wpn_fps_ass_heffy_762_lfg_m92",
-	"wpn_fps_ass_heffy_762_lfg_none",
-	"wpn_fps_ass_heffy_762_lfg_moe"
+	"wpn_fps_ass_heffy_762_lfg_none"
 }
 local ak47foregrip = {
 	"wpn_fps_ass_heffy_762_lfg_ak47",
@@ -179,8 +176,7 @@ local ak47foregrip = {
 	"wpn_fps_ass_heffy_762_lfg_bl_t56",
 	"wpn_fps_ass_heffy_762_lfg_br_t56",
 	"wpn_fps_ass_heffy_762_lfg_mpi",
-	"wpn_fps_ass_heffy_762_lfg_amd63",
-	"wpn_fps_ass_heffy_762_lfg_moe"
+	"wpn_fps_ass_heffy_762_lfg_amd63"
 }
 
 --- Barrel ---
@@ -209,9 +205,7 @@ local all_ak47barrel = {
 
 --- Front Sights ---
 local all_ak47fo = {
-	"wpn_fps_ass_heffy_762_fo_akm",
-	"wpn_fps_ass_heffy_762_fo_blops",
-	"wpn_fps_ass_heffy_762_fo_ins"
+	"wpn_fps_ass_heffy_762_fo_akm"
 }
 
 --- Barrel Extensions --
