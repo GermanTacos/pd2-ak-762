@@ -1635,6 +1635,12 @@
 		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/rpk_body"/>
 		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/rpk_body_thq"/>
 		
+		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/rpk_caps_df"/>
+		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/rpk_caps_nm"/>
+		
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/rpk_caps"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/rpk_caps_thq"/>
+		
 		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/rpk_bipod_df"/>
 		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/rpk_bipod_nm"/>
 		
