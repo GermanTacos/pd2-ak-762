@@ -964,21 +964,6 @@
 		<stats extra_ammo_new="45" spread="-2" recoil="2" concealment="-8"/>
 		<pcs/>
 	</WeaponMod>
-	
-	<WeaponMod id="wpn_fps_ass_heffy_762_m_proto_30" based_on="wpn_fps_ass_flint_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_proto_30" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
-		<stats extra_ammo="0" spread="1"/>
-		<pcs/>
-	</WeaponMod>
-	
-	<WeaponMod id="wpn_fps_ass_heffy_762_m_bake_30" based_on="wpn_fps_ass_flint_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_bake_30" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
-		<stats extra_ammo="0" concealment="-1"/>
-		<pcs/>
-	</WeaponMod>
-	
-	<WeaponMod id="wpn_fps_ass_heffy_762_m_bake_10" based_on="wpn_fps_ass_flint_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_bake_10" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
-		<stats extra_ammo="-10" concealment="4" reload="2"/>
-		<pcs/>
-	</WeaponMod>
 		
 	<!-- SOUND -->
 	
@@ -1017,7 +1002,7 @@
 	
 	<!-- FIRING MECHANISM -->
 	
-	<!-- 620rpm ZASTAVA -->
+	<!-- ZASTAVA   - 620RPM FULL AUTO -->
 	<WeaponMod id="wpn_fps_ass_heffy_762_fm_m92" based_on="wpn_fps_upg_a_custom_free" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="custom" sub_type="autofire" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
 	   <stats damage="0"/>
 	   <custom_stats rof_mult="1.033333333333333"/> 
@@ -1025,27 +1010,28 @@
     </WeaponMod>
 	
 	
-	<!-- fucking semi auto TABUK -->
+	<!-- TABUK     - 600RPM SEMI AUTO -->
 	<WeaponMod id="wpn_fps_ass_heffy_762_fm_tabuk" based_on="wpn_fps_upg_i_singlefire" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="custom" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
 	   <stats damage="0"/>
 	   <pcs/>
     </WeaponMod>
 	
-	<!--650rpm-->
+	
+	<!-- TYPE 56   - 650RPM FULL AUTO -->
 	<WeaponMod id="wpn_fps_ass_heffy_762_fm_ty56" based_on="wpn_fps_upg_a_custom_free" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="custom" sub_type="autofire" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
 	   <stats damage="0"/>
 	   <custom_stats rof_mult="1.083333333333333"/> 
 	   <pcs/>
     </WeaponMod>
 	
-	<!--650rpm (the AMD63 has 600rpm) -->
+	<!-- AMD-63    - 650RPM FULL AUTO -->
 	<WeaponMod id="wpn_fps_ass_heffy_762_fm_amd65" based_on="wpn_fps_upg_a_custom_free" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="custom" sub_type="autofire" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
 	   <stats damage="0"/>
 	   <custom_stats rof_mult="1.083333333333333"/> 
 	   <pcs/>
     </WeaponMod>
 		
-	<!--750rpm Black ops 1 -->
+	<!-- BLACK OPS - 750RPM FULL AUTO -->
 	<WeaponMod id="wpn_fps_ass_heffy_762_fm_blops" based_on="wpn_fps_upg_a_custom_free" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="custom" sub_type="autofire" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
 	   <stats damage="0"/>
 	   <custom_stats rof_mult="1.25"/> 
@@ -2326,7 +2312,7 @@
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_bake_10"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_bake_10"/>
 		
-		<!-- >:( -->
+		<!-- this probably isn't needed anymore I think I changed the way the extension works but keep it just in case -->
 		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/black_30_df"/>
 		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/black_30_nm"/>
 		
