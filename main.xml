@@ -427,6 +427,28 @@
 		<pcs/>
 	</WeaponMod>
 	
+	<!-- AK 109 -->
+	
+	<WeaponMod id="wpn_fps_ass_heffy_762_ba_ak109" based_on="wpn_fps_ass_flint_body_upperreceiver" type="barrel2" unit="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/wpn_fps_ass_heffy_762_ba_ak109" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<forbids>
+			<value_node value="wpn_fps_ass_heffy_762_ufg_none"/>
+			<value_node value="wpn_fps_ass_heffy_762_lfg_vepr"/>
+			<value_node value="wpn_fps_ass_heffy_762_bp_rpk"/>
+			<value_node value="wpn_fps_ass_heffy_762_fh_ak103"/>
+		</forbids>
+		<override>
+			<wpn_fps_ass_heffy_762_fh_dummy unit="units/mods/weapons/wpn_fps_ass_heffy_762_ak103_pts/wpn_fps_ass_heffy_762_fh_ak103"/>
+			<wpn_fps_ass_heffy_762_rsb_ak47 unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+		<adds>
+			<value_node value="wpn_fps_ass_heffy_762_rsb_ak109"/>
+		</adds>
+		<pcs/>
+	</WeaponMod>
+		
+	<WeaponMod id="wpn_fps_ass_heffy_762_rsb_ak109" based_on="wpn_fps_ass_flint_body_upperreceiver" type="rear_sight_block" unit="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/wpn_fps_ass_heffy_762_rsb_ak109" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
+	</WeaponMod>
+	
 	<!-- VEPR -->
 	
 	<WeaponMod id="wpn_fps_ass_heffy_762_ba_vepr" based_on="wpn_fps_ass_flint_body_upperreceiver" type="barrel2" unit="units/mods/weapons/wpn_fps_ass_heffy_762_vepr_pts/wpn_fps_ass_heffy_762_ba_vepr" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
@@ -1178,6 +1200,8 @@
 				<value_node value="wpn_fps_ass_heffy_762_ba_ak104"/>
 				<value_node value="wpn_fps_ass_heffy_762_fh_ak104"/>
 				
+				<value_node value="wpn_fps_ass_heffy_762_ba_ak109"/>
+				
 				<value_node value="wpn_fps_ass_heffy_762_ba_md90"/>
 				<value_node value="wpn_fps_ass_heffy_762_fh_md90"/>
 				
@@ -1788,6 +1812,24 @@
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_ak104_pts/wpn_fps_ass_heffy_762_fh_ak104"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_ak104_pts/wpn_fps_ass_heffy_762_fh_ak104"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_ak104_pts/wpn_fps_ass_heffy_762_fh_ak104"/>
+		
+		<!-- AK 109 PTS -->
+		
+		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/ak109_body_df"/>
+		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/ak109_body_nm"/>
+		
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/ak109_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/ak109_body_thq"/>
+		
+		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/wpn_fps_ass_heffy_762_ba_ak109"/>
+		<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/wpn_fps_ass_heffy_762_ba_ak109"/>
+		<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/wpn_fps_ass_heffy_762_ba_ak109"/>
+		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/wpn_fps_ass_heffy_762_ba_ak109"/>
+		
+		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/wpn_fps_ass_heffy_762_rsb_ak109"/>
+		<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/wpn_fps_ass_heffy_762_rsb_ak109"/>
+		<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/wpn_fps_ass_heffy_762_rsb_ak109"/>
+		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_ak109_pts/wpn_fps_ass_heffy_762_rsb_ak109"/>
 		
 		<!-- VEPR PTS -->
 		

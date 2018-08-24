@@ -77,6 +77,8 @@
 	"bm_wp_wpn_fps_ass_heffy_762_ba_ak104" : "AK-104 Barrel",
 	"bm_wp_wpn_fps_ass_heffy_762_fh_ak104" : "AK-104 Muzzle Brake",
 	
+	"bm_wp_wpn_fps_ass_heffy_762_ba_ak109" : "AK-109 Barrel",
+	
 	"bm_wp_wpn_fps_ass_heffy_762_ba_md90" : "PM md 90 Barrel",
 	"bm_wp_wpn_fps_ass_heffy_762_fh_md90" : "PM md 90 Flash Hider",
 	
