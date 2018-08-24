@@ -1047,6 +1047,12 @@
 	<!-- TABUK     - 600RPM SEMI AUTO -->
 	<WeaponMod id="wpn_fps_ass_heffy_762_fm_tabuk" based_on="wpn_fps_upg_i_singlefire" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="custom" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
 	   <stats damage="0"/>
+	   <override>
+			<wpn_fps_ass_heffy_762_fsl_ak47  a_obj="a_fsl_tabuk_std"/>
+			<wpn_fps_ass_heffy_762_fsl_ak103 a_obj="a_fsl_tabuk_std"/>
+			<wpn_fps_ass_heffy_762_fsl_akm 	 a_obj="a_fsl_tabuk_std"/>
+			<wpn_fps_ass_heffy_762_fsl_akmsu a_obj="a_fsl_tabuk_std"/>
+	   </override>
 	   <pcs/>
     </WeaponMod>
 	

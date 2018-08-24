@@ -50,6 +50,14 @@ if ( self.heffy_762 ) then
         position = Vector3( 0, 1.5, 1.1 ), 
         rotation = Rotation( 0, 10, 0 )
 	})
+--- Fire Selector ---
+-- Override by mechanism --
+self:SetupAttachmentPoint("heffy_762", {
+		name = "a_fsl_tabuk_std", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -0.8, 0 ), 
+        rotation = Rotation( 0, -6, 0 ) 
+	})	
 --- Scope Mount ---
 	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_o_mount", 
