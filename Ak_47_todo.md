@@ -1,0 +1,3 @@
+- [ ] Add AK109 Firing Mechanism (Every other barrel forbids it)
+- [ ] Add AKMSU Rear sight as override for the default
+- [ ] Folded RPK Bipod
