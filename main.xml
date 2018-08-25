@@ -242,6 +242,7 @@
 			<wpn_fps_ass_heffy_762_ufgc_ak47 	unit="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_ufgc_akmsu" /> <!-- Just in case -->
 			<wpn_fps_ass_heffy_762_rsb_ak47 	unit="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_rsb_akmsu" /> 
 			<wpn_fps_ass_heffy_762_tr_ak47 		unit="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_tr_akmsu" /> 
+			<wpn_fps_ass_heffy_762_ro_akm		unit="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_ro_akmsu" />
 			<wpn_fps_ass_heffy_762_sp_ak47 		a_obj="a_s_akmsu_ak47" /> 
 			<wpn_fps_ass_heffy_762_st_ak47 		a_obj="a_s_akmsu_ak47" /> 
 			<wpn_fps_ass_heffy_762_pg_ak47 		a_obj="a_g_akmsu" /> 
@@ -1654,6 +1655,11 @@
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_tr_akmsu"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_tr_akmsu"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_tr_akmsu"/>
+		
+		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_ro_akmsu"/>
+		<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_ro_akmsu"/>
+		<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_ro_akmsu"/>
+		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_ro_akmsu"/>
 		
 		<!-- RPK PTS -->
 		
