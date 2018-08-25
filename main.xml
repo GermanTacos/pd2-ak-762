@@ -2446,11 +2446,6 @@
 		<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/>
 		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
-		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
-		<hook file="inventorydescription.lua" source_file="lib/utils/inventorydescription.lua"/>
-	<!--<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/>
-		<hook file="hudmanagerpd2.lua" source_file="lib/managers/hudmanagerpd2"/>
-		<hook file="underbarrel_classes.lua" source_file="lib/units/weapons/weaponunderbarrellauncher"/> -->
 	</Hooks>
 	
 </table>
