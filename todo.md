@@ -1,3 +1,3 @@
-- [ ] Add AK109 Firing Mechanism (Every other barrel forbids it)
 - [x] Add AKMSU Rear sight as override for the default
 - [ ] Folded RPK Bipod
+- [ ] ZASTAVA M92 Rear sight override by receiver + forbid
