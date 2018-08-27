@@ -628,6 +628,32 @@ for i, part_id in ipairs(all_ak47fl) do
 	self.parts.wpn_fps_ass_heffy_762_flp_<insert_flashlight_position_name>.override[part_id] = {a_obj = "a_fl_ak47"}
 end
 --]]
+
+
+if self.wpn_fps_ass_heffy_545 then
+local ak74parts = {
+    "wpn_fps_ass_heffy_545_lfg_ak74",
+    "wpn_fps_ass_heffy_545_ufg_ak74",
+    "wpn_fps_ass_heffy_545_pg_ak74",
+    "wpn_fps_ass_heffy_545_st_ak74",
+    "wpn_fps_ass_heffy_545_lfg_rpk74",
+    "wpn_fps_ass_heffy_545_ufg_rpk74",
+    "wpn_fps_ass_heffy_545_st_rpk74",
+}
+    for i, part_id in ipairs(ak74parts) do
+        table.insert(self.wpn_fps_ass_heffy_762.uses_parts, part_id)
+        if not self.parts[part_id].pcs then
+			self.wpn_fps_ass_heffy_762.override[part_id] = {pcs = {}}
+		end
+    end
+end
+
+
+
+
+
+
+
 end )
 
 Hooks:PostHook( WeaponFactoryTweakData, "_init_cc_material_config", "AK47ModInit_cc_material_config", function(self)
