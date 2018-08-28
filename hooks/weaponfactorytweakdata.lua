@@ -100,6 +100,18 @@ function WeaponFactoryTweakData:akpack_write_error( func, cause, error_id, value
 	end
 end 
 
+--- Part Copy Base ---
+function WeaponFactoryTweakData:ak762_copy_part( att_og, att_cp )
+	if self.parts[att_og] then
+		self.parts[att_cp] = deep_clone(self.parts[att_og])
+		self.parts[att_cp].pcs = {}
+		self.parts[att_cp].is_a_unlockable = true
+		table.insert(self.wpn_fps_ass_heffy_762.uses_parts, att_cp)
+	else
+		self:akpack_write_error( "copy_part", "fti", "part", att_og )	
+	end
+end
+
 Hooks:PostHook( WeaponFactoryTweakData, "init", "AK47ModInit", function(self)
 
 ------------------------------------------
@@ -629,6 +641,9 @@ for i, part_id in ipairs(all_ak47fl) do
 end
 --]]
 
+------------------------------------------------------
+----<A><K><4><7> -Other modules code- <A><K><4><7>----
+------------------------------------------------------
 
 if self.wpn_fps_ass_heffy_545 then
 local ak74parts = {
@@ -641,11 +656,22 @@ local ak74parts = {
     "wpn_fps_ass_heffy_545_st_rpk74",
 }
     for i, part_id in ipairs(ak74parts) do
-        table.insert(self.wpn_fps_ass_heffy_762.uses_parts, part_id)
-        if not self.parts[part_id].pcs then
-			self.wpn_fps_ass_heffy_762.override[part_id] = {pcs = {}}
+        if self.parts[part_id].pcs then
+			table.insert(self.wpn_fps_ass_heffy_762.uses_parts, part_id)
 		end
     end
+	--self:ak762_copy_part("wpn_fps_ass_heffy_545_lfg_ak74", "wpn_fps_ass_heffy_762_lfg_ak74")
+	--[[
+	self.parts.wpn_fps_ass_heffy_762_lfg_ak74 = deep_clone(self.parts.wpn_fps_ass_heffy_545_lfg_ak74)
+	self.parts.wpn_fps_ass_heffy_762_lfg_ak74.pcs = {}
+	self.parts.wpn_fps_ass_heffy_762_lfg_ak74.is_a_unlockable = true
+	table.insert(self.wpn_fps_ass_heffy_762.uses_parts, "wpn_fps_ass_heffy_762_lfg_ak74")
+	
+		self.parts.wpn_fps_ass_heffy_762_lfg_ak74 = deep_clone(self.parts.wpn_fps_ass_heffy_762_lfg_akm)
+		self.parts.wpn_fps_ass_heffy_762_lfg_ak74.name_id = "bm_wp_wpn_fps_ass_heffy_545_lfg_ak74"
+		self.parts.wpn_fps_ass_heffy_762_lfg_ak74.unit = "units/mods/weapons/wpn_fps_ass_heffy_545_ak74_pts/wpn_fps_ass_heffy_545_lfg_ak74"
+		table.insert(self.wpn_fps_ass_heffy_762.uses_parts, "wpn_fps_ass_heffy_762_lfg_ak74")
+	--]]
 end
 
 
