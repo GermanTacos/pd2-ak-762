@@ -376,6 +376,12 @@ self:SetupAttachmentPoint("heffy_762", {
         rotation = Rotation( 0, -10, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_stp_ak47",
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -0.7, 4 ), 
+        rotation = Rotation( 0, 10, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_s_akmsu", 
         base_a_obj = "a_body", 
         position = Vector3( 0, 0.875, 0.6875 ), --0.7, 0.55 | 0.175, 0.1375

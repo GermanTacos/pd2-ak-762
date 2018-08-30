@@ -118,6 +118,15 @@ Hooks:PostHook( WeaponFactoryTweakData, "init", "AK47ModInit", function(self)
 ----<A><K><4><7> -Arrays- <A><K><4><7>----
 ------------------------------------------
 
+--- Lower ---
+local all_ak47lower = {
+	"wpn_fps_ass_heffy_762_lr_akm",
+	"wpn_fps_ass_heffy_762_lr_ak103",
+	"wpn_fps_ass_heffy_762_lr_ak47",
+	"wpn_fps_ass_heffy_762_lr_akmsu",
+	"wpn_fps_ass_heffy_762_lr_m92"
+}
+
 --- Stocks ---
 local all_ak47stock = {
 	"wpn_fps_ass_heffy_762_st_ak47",
@@ -452,13 +461,24 @@ for i, st_id in ipairs(akmstock) do
 	end
 end
 --Stock Pad overrides--
-for i, sp_id in ipairs(akmstockpad) do
-	self.parts.wpn_fps_ass_heffy_762_lr_ak47.override[sp_id]  = {a_obj = "a_s_ak47"}
-	self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[sp_id] = {a_obj = "a_s_akmsu"}
-	self.parts.wpn_fps_ass_heffy_762_lr_ak103.override[sp_id] = {a_obj = "a_s_akmsu"}
-	self.parts.wpn_fps_ass_heffy_762_lr_m92.override[sp_id]   = {a_obj = "a_s_akmsu"}
+for i, lr_id in ipairs(all_ak47lower) do
+	for i, st_id in ipairs(akmstock) do
+		self.parts[lr_id].override[st_id] = self.parts[lr_id].override[st_id] or {}
+		self.parts[lr_id].override[st_id].override = self.parts[lr_id].override[st_id].override or {}
+	end
 end
-
+for i, lr_id in ipairs(all_ak47lower) do
+	self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_ak47 = self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_ak47 or {}
+	self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_ak47.override = self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_ak47.override or {}
+end
+for i, st_id in ipairs(akmstock) do
+	for i, sp_id in ipairs(akmstockpad) do
+		self.parts.wpn_fps_ass_heffy_762_lr_ak47.override[st_id].override[sp_id]  = {a_obj = "a_s_ak47"}
+		self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[st_id].override[sp_id] = {a_obj = "a_s_akmsu"}
+		self.parts.wpn_fps_ass_heffy_762_lr_ak103.override[st_id].override[sp_id] = {a_obj = "a_s_akmsu"}
+		self.parts.wpn_fps_ass_heffy_762_lr_m92.override[st_id].override[sp_id]   = {a_obj = "a_s_akmsu"}
+	end
+end
 -- Barrel position override by lrs --
 for i, ba_id in ipairs(all_ak47barrel) do
 	self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[ba_id] = {a_obj = "a_b_akmsu"}	
