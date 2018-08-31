@@ -35,7 +35,7 @@ if ( self.heffy_762 ) then
 	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_gl", 
         base_a_obj = "a_fl", 
-        position = Vector3( -0.6, 24.6, -3.1 ), 
+        position = Vector3( -2.88, 27.2, -3.1 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_762", {
