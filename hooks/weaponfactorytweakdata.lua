@@ -543,6 +543,9 @@ for i, ext_id in ipairs(all_ak47ext) do
 	end
 end
 --self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override.wpn_fps_ass_heffy_762_lfg_ak47 = {unit="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_lfg_akmsu"}
+
+-- Barrel Override --
+self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override.wpn_fps_ass_heffy_762_ba_ak109 = {override = {wpn_fps_ass_heffy_762_ro_ak47 = {a_obj="a_ro_ak109_akmsu"}}}
 --- Magazines ---
 self.parts.wpn_fps_ass_heffy_762_m_steel_75.weapon_reload_override 	 = {bm_w_heffy_762 = "tecci"}
 

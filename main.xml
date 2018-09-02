@@ -215,6 +215,7 @@
 	
 	<WeaponMod id="wpn_fps_ass_heffy_762_lr_akmsu" based_on="wpn_fps_ass_flint_body_upperreceiver" type="dreceiver" unit="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_lr_akmsu" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
 		<forbids>
+			<value_node value="wpn_fps_ass_heffy_762_ba_ak109"/>
 			<value_node value="wpn_fps_ass_heffy_762_lfg_akm"/>
 			<value_node value="wpn_fps_ass_heffy_762_lfg_rpk"/>
 			<value_node value="wpn_fps_ass_heffy_762_lfg_ak103"/>
@@ -447,6 +448,7 @@
 			<value_node value="wpn_fps_ass_heffy_762_fh_ak103"/>
 		</forbids>
 		<override>
+			<wpn_fps_ass_heffy_762_ro_akm 	a_obj="a_ro_ak109"/>
 			<wpn_fps_ass_heffy_762_fh_dummy unit="units/mods/weapons/wpn_fps_ass_heffy_762_ak103_pts/wpn_fps_ass_heffy_762_fh_ak103"/>
 			<wpn_fps_ass_heffy_762_rsb_ak47 unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
 		</override>

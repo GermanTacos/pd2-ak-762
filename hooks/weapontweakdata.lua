@@ -65,6 +65,26 @@ self:SetupAttachmentPoint("heffy_762", {
         position = Vector3( 0, 0, 2.85 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
+--- Rear Sight ---
+self:SetupAttachmentPoint("heffy_762", {
+		name = "a_ro_ak109", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -2.9, -0.3 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+self:SetupAttachmentPoint("heffy_762", {
+		name = "a_ro_ak109_akmsu", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -6.8, -0.1 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+-- Override by receiver ---
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_ro_akmsu_std", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -3.9, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 --- Front sights ---
 -- Override by lfg ---
 	self:SetupAttachmentPoint("heffy_762", {
