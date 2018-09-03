@@ -1,4 +1,4 @@
 - [x] Add AKMSU Rear sight as override for the default
 - [x] Folded RPK Bipod
 - [x] ZASTAVA M92 Rear sight override by receiver + forbid
-- [ ] ZASTAVA M92 Rear sight Position override by M92 receiver
+- [x] ZASTAVA M92 Rear sight Position override by M92 receiver
