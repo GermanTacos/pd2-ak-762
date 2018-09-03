@@ -573,6 +573,13 @@ for i, lfg_id in ipairs(all_ak47lowerforegrip) do
 	end
 end
 
+--- Barrels ---
+for i, ba_id in ipairs(all_ak47barrel) do
+	if ba_id ~= "wpn_fps_ass_heffy_762_ba_rpk" then
+		self:akpack_setup_forbid( ba_id, "wpn_fps_ass_heffy_762_bp_rpk" )
+		self:akpack_setup_forbid( ba_id, "wpn_fps_ass_heffy_762_bp_rpk_folded" )
+	end
+end
 ------------------------------------------
 ----<A><K><4><7> -Stance- <A><K><4><7>----
 ------------------------------------------

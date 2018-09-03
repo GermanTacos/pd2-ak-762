@@ -60,6 +60,7 @@
 	"bm_wp_wpn_fps_ass_heffy_762_lfg_rpk" : "RPK Lower Foregrip",
 	"bm_wp_wpn_fps_ass_heffy_762_st_rpk" : "RPK Stock",
 	"bm_wp_wpn_fps_ass_heffy_762_bp_rpk" : "RPK Bipod",		
+	"bm_wp_wpn_fps_ass_heffy_762_bp_rpk_folded" : "RPK Folded Bipod",		
 	"bm_wp_wpn_fps_ass_heffy_762_lr_rpk" : "RPK Receiver",									   
 	
 	"bm_wp_wpn_fps_ass_heffy_762_lr_ak103" : "AK-103 Receiver",
