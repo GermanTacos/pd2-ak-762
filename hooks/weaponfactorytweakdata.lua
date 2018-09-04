@@ -349,6 +349,46 @@ local akmgrips = {
 	"wpn_fps_ass_heffy_762_pg_m92",
 	"wpn_fps_ass_heffy_762_pg_rk62"
 }
+
+--- Compatibility Array Insertion ---
+
+if self.wpn_fps_ass_heffy_545 then
+
+	local ak74stocks = {
+		"wpn_fps_ass_heffy_all_st_ak74",
+		"wpn_fps_ass_heffy_545_st_rpk74",
+		"wpn_fps_ass_heffy_545_st_mpi",
+	}
+	
+	for i, part_id in ipairs(ak74stocks) do
+		table.insert(all_ak47stock, part_id)
+		table.insert(akmstock, part_id)
+	end
+	
+	local ak74stockparts = {
+		"wpn_fps_ass_heffy_545_stp_ak74",
+		"wpn_fps_ass_heffy_545_stp_ak74_2",
+		"wpn_fps_ass_heffy_545_stp_rpk74",
+		"wpn_fps_ass_heffy_545_str_rpk74",
+		"wpn_fps_ass_heffy_545_stp_mpi",
+	}
+	
+	for i, part_id in ipairs(ak74stockparts) do
+		table.insert(akmstockpad, part_id)
+	end
+	
+	local ak74grips = {
+		"wpn_fps_ass_heffy_all_pg_ak74",
+		"wpn_fps_ass_heffy_545_pg_mpi",
+	}
+	
+	for i, part_id in ipairs(ak74grips) do
+		table.insert(all_ak47grips, part_id)
+		table.insert(akmgrips, part_id)
+	end
+
+end
+
 --------------------------------------------
 ----<A><K><4><7> -Override- <A><K><4><7>----
 --------------------------------------------
@@ -720,60 +760,37 @@ end
 ----<A><K><4><7> -Other modules code- <A><K><4><7>----
 ------------------------------------------------------
 
+--[[self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_762" )
+
 if self.wpn_fps_ass_heffy_545 then
-local ak74parts = {
-    "wpn_fps_ass_heffy_545_lfg_ak74",
-    "wpn_fps_ass_heffy_545_ufg_ak74",
-    "wpn_fps_ass_heffy_545_pg_ak74",
-    "wpn_fps_ass_heffy_545_st_ak74",
-    "wpn_fps_ass_heffy_545_lfg_rpk74",
-    "wpn_fps_ass_heffy_545_ufg_rpk74",
-    "wpn_fps_ass_heffy_545_st_rpk74",
-    "wpn_fps_ass_heffy_545_lfg_mpi",
-    "wpn_fps_ass_heffy_545_ufg_mpi",
-    "wpn_fps_ass_heffy_545_pg_mpi",
-    "wpn_fps_ass_heffy_545_st_mpi",
-    "wpn_fps_ass_heffy_545_stp_ak74",
-    "wpn_fps_ass_heffy_545_stp_ak74_2",
-    "wpn_fps_ass_heffy_545_ufg_tantal"
-}
+
+	local ak74parts = {
+		"wpn_fps_ass_heffy_all_lfg_ak74",
+		"wpn_fps_ass_heffy_all_ufg_ak74",
+		"wpn_fps_ass_heffy_all_pg_ak74",
+		"wpn_fps_ass_heffy_all_st_ak74",
+		"wpn_fps_ass_heffy_545_stp_ak74",
+		"wpn_fps_ass_heffy_545_stp_ak74_2",
+		"wpn_fps_ass_heffy_545_lfg_rpk74",
+		"wpn_fps_ass_heffy_545_ufg_rpk74",
+		"wpn_fps_ass_heffy_545_st_rpk74",
+		"wpn_fps_ass_heffy_545_stp_rpk74",
+		"wpn_fps_ass_heffy_545_str_rpk74",
+		"wpn_fps_ass_heffy_545_lfg_mpi",
+		"wpn_fps_ass_heffy_545_ufg_mpi",
+		"wpn_fps_ass_heffy_545_pg_mpi",
+		"wpn_fps_ass_heffy_545_st_mpi",
+		"wpn_fps_ass_heffy_545_stp_mpi",
+		"wpn_fps_ass_heffy_545_ufg_tantal",
+	}
+	
     for i, part_id in ipairs(ak74parts) do
-        if self.parts[part_id].pcs then
+		if [part_id].pcs then
 			table.insert(self.wpn_fps_ass_heffy_762.uses_parts, part_id)
 		end
     end
-	--Stock overrides--
-	self:akpack_check_adds( "wpn", "wpn_fps_ass_heffy_762" )
-	for i, st_id in ipairs(ak74parts) do
-		if self.parts[st_id].type == "stock" or self.parts[st_id].type == "stock_part" then
-			self.parts.wpn_fps_ass_heffy_762_lr_ak47.override[st_id]  = {a_obj = "a_s_ak47"}
-			self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[st_id] = {a_obj = "a_s_akmsu"}
-			self.parts.wpn_fps_ass_heffy_762_lr_m92.override[st_id]   = {a_obj = "a_s_akmsu"}
-			self.parts.wpn_fps_ass_heffy_762_lr_ak103.override[st_id] = {a_obj = "a_s_akmsu"}
-			-- Fuck off payday why does nothing FUCKING WORK
-			--if self.parts[st_id].type == "stock" then
-			--	self.wpn_fps_ass_heffy_762.adds[st_id] = {"wpn_fps_ass_heffy_545_stp_ak74"}
-			--	self:akpack_check_override( "part", st_id )
-			--	self.parts[st_id].override.wpn_fps_ass_heffy_762_sp_ak47 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"}
-			--end
-			-- stupid bullshit "solution"
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_ak47", st_id)
-		end
-	end
-	--self:ak762_copy_part("wpn_fps_ass_heffy_545_lfg_ak74", "wpn_fps_ass_heffy_762_lfg_ak74")
-	--[[
-	self.parts.wpn_fps_ass_heffy_762_lfg_ak74 = deep_clone(self.parts.wpn_fps_ass_heffy_545_lfg_ak74)
-	self.parts.wpn_fps_ass_heffy_762_lfg_ak74.pcs = {}
-	self.parts.wpn_fps_ass_heffy_762_lfg_ak74.is_a_unlockable = true
-	table.insert(self.wpn_fps_ass_heffy_762.uses_parts, "wpn_fps_ass_heffy_762_lfg_ak74")
-	--]]
-end
-
-
-
-
-
-
+	
+end]]--
 
 end )
 
