@@ -760,7 +760,7 @@ end
 ----<A><K><4><7> -Other modules code- <A><K><4><7>----
 ------------------------------------------------------
 
---[[self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_762" )
+self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_762" )
 
 if self.wpn_fps_ass_heffy_545 then
 
@@ -769,28 +769,23 @@ if self.wpn_fps_ass_heffy_545 then
 		"wpn_fps_ass_heffy_all_ufg_ak74",
 		"wpn_fps_ass_heffy_all_pg_ak74",
 		"wpn_fps_ass_heffy_all_st_ak74",
-		"wpn_fps_ass_heffy_545_stp_ak74",
-		"wpn_fps_ass_heffy_545_stp_ak74_2",
 		"wpn_fps_ass_heffy_545_lfg_rpk74",
 		"wpn_fps_ass_heffy_545_ufg_rpk74",
 		"wpn_fps_ass_heffy_545_st_rpk74",
-		"wpn_fps_ass_heffy_545_stp_rpk74",
-		"wpn_fps_ass_heffy_545_str_rpk74",
 		"wpn_fps_ass_heffy_545_lfg_mpi",
 		"wpn_fps_ass_heffy_545_ufg_mpi",
 		"wpn_fps_ass_heffy_545_pg_mpi",
 		"wpn_fps_ass_heffy_545_st_mpi",
-		"wpn_fps_ass_heffy_545_stp_mpi",
 		"wpn_fps_ass_heffy_545_ufg_tantal",
 	}
 	
     for i, part_id in ipairs(ak74parts) do
-		if [part_id].pcs then
+		if self.parts[part_id].pcs then
 			table.insert(self.wpn_fps_ass_heffy_762.uses_parts, part_id)
 		end
     end
 	
-end]]--
+end
 
 end )
 
