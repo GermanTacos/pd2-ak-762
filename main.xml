@@ -579,6 +579,10 @@
 		<pcs/>
 	</WeaponMod>
 	
+	<WeaponMod id="wpn_fps_ass_heffy_762_lfg_md90" based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_lower" unit="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_lfg_md90" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<pcs/>
+	</WeaponMod>
+	
 	<!-- TYPE 56-II -->
 	
 	<WeaponMod id="wpn_fps_ass_heffy_762_ba_t56" based_on="wpn_fps_ass_flint_body_upperreceiver" type="barrel2" unit="units/mods/weapons/wpn_fps_ass_heffy_762_t56_pts/wpn_fps_ass_heffy_762_ba_t56" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
@@ -1314,6 +1318,7 @@
 				
 				<value_node value="wpn_fps_ass_heffy_762_ba_md90"/>
 				<value_node value="wpn_fps_ass_heffy_762_fh_md90"/>
+			<!--<value_node value="wpn_fps_ass_heffy_762_lfg_md90"/>-->
 				
 				<value_node value="wpn_fps_ass_heffy_762_ba_vepr"/>
 				<value_node value="wpn_fps_ass_heffy_762_lr_vepr"/>
@@ -2005,6 +2010,12 @@
 		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/md90_barrel"/>
 		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/md90_barrel_thq"/>
 		
+		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/md90_furniture_df"/>
+		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/md90_furniture_nm"/>
+		
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/md90_furniture"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/md90_furniture_thq"/>
+		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_ba_md90"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_ba_md90"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_ba_md90"/>
@@ -2019,6 +2030,11 @@
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_fh_md90"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_fh_md90"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_fh_md90"/>
+		
+		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_lfg_md90"/>
+		<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_lfg_md90"/>
+		<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_lfg_md90"/>
+		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_lfg_md90"/>
 		
 		<!-- TYPE 56-II PTS -->
 		
