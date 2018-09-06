@@ -2,3 +2,4 @@
 - [x] Folded RPK Bipod
 - [x] ZASTAVA M92 Rear sight override by receiver + forbid
 - [x] ZASTAVA M92 Rear sight Position override by M92 receiver
+- [ ] Fix wrong suppression values
