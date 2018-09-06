@@ -1,0 +1,8 @@
+<materials version="3" group="weapon_ak12">
+	<material name="mat_bodyback" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/md90_barrel_df" />
+	</material>
+	<material name="mat_barrel" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/md90_barrel_df" />
+	</material>
+</materials>
