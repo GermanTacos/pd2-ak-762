@@ -129,6 +129,18 @@ self:SetupAttachmentPoint("heffy_762", {
         position = Vector3( 0, -14.4, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_fo_akmsu_md90", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -14.9, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_fo_akmsu_amd65", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -16.9, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 	
 	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_fo_m70_std", 
@@ -158,6 +170,18 @@ self:SetupAttachmentPoint("heffy_762", {
 		name = "a_fo_m70_ak104", 
         base_a_obj = "a_body", 
         position = Vector3( 0, -9, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_fo_m70_md90", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -9.5, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_fo_m70_amd65", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -11.5, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_762", {
