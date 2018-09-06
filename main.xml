@@ -2,7 +2,7 @@
 
 	<Localization directory="locals" default="english.txt"/>
 	
-	<GlobalValue id="heffy_762" color="Color(0.8, 0.2, 0.8)"/>
+	<GlobalValue id="heffy_762" color="Color(1, 0.522, 0.106)"/>
 	
 	<!-- DUMMY -->
 	
