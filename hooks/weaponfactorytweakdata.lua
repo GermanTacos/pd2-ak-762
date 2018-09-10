@@ -532,7 +532,7 @@ self:akpack_check_override( "part", "wpn_fps_ass_heffy_762_lr_m92" )
 for i, st_id in ipairs(akmstock) do
 	self.parts.wpn_fps_ass_heffy_762_lr_ak47.override[st_id]  = {a_obj = "a_s_ak47"}
 	self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[st_id] = {a_obj = "a_s_akmsu"}
-	self.parts.wpn_fps_ass_heffy_762_lr_m92.override[st_id]   = {a_obj = "a_s_akmsu"}
+	self.parts.wpn_fps_ass_heffy_762_lr_m92.override[st_id]   = {a_obj = "a_s_akm"}
 	if st_id ~= "wpn_fps_ass_heffy_762_st_ak103" then
 		self.parts.wpn_fps_ass_heffy_762_lr_ak103.override[st_id] = {a_obj = "a_s_akmsu"}
 	end
@@ -562,7 +562,7 @@ for i, st_id in ipairs(akmstock) do
 		self.parts.wpn_fps_ass_heffy_762_lr_ak47.override[st_id].override[sp_id]  = {a_obj = "a_s_ak47"}
 		self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[st_id].override[sp_id] = {a_obj = "a_s_akmsu"}
 		self.parts.wpn_fps_ass_heffy_762_lr_ak103.override[st_id].override[sp_id] = {a_obj = "a_s_akmsu"}
-		self.parts.wpn_fps_ass_heffy_762_lr_m92.override[st_id].override[sp_id]   = {a_obj = "a_s_akmsu"}
+		self.parts.wpn_fps_ass_heffy_762_lr_m92.override[st_id].override[sp_id]   = {a_obj = "a_s_akm"}
 	end
 end
 --[[
@@ -708,6 +708,8 @@ for i, ba_id in ipairs(all_ak47barrel) do
 		self:akpack_setup_forbid( ba_id, "wpn_fps_ass_heffy_762_bp_rpk_folded" )
 	end
 end
+self.parts.wpn_fps_ass_heffy_762_bp_rpk.forbids = nil
+self.parts.wpn_fps_ass_heffy_762_bp_rpk_folded.forbids = nil
 --- Lower ---
 for i, lr_id in ipairs(akmsulower) do
 	self:akpack_setup_forbid( lr_id, "wpn_fps_ass_heffy_762_st_vepr" )
