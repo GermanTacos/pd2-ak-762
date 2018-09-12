@@ -258,6 +258,25 @@ self:SetupAttachmentPoint("heffy_762", {
         position = Vector3( 0, 10.5, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
+--- Bipods ---
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_bp_akmsu", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -3.9, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_bp_m70", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, 1.5, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_bp_war", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, 10.5, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 --- Barrel extensions ---
 -- Default positions --
 	self:SetupAttachmentPoint("heffy_762", {
@@ -440,8 +459,8 @@ self:SetupAttachmentPoint("heffy_762", {
 	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_s_akm_akmsu", 
         base_a_obj = "a_body", 
-        position = Vector3( 0, -0.875, -0.6875 ),
-        rotation = Rotation( 0, 5, 0 ) 
+        position = Vector3( 0, -0.7, -0.54),
+        rotation = Rotation( 0, -5, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_s_akmsu_ak47", 

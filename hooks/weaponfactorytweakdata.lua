@@ -350,6 +350,11 @@ local akmgrips = {
 	"wpn_fps_ass_heffy_762_pg_rk62"
 }
 
+local all_ak47bipod = {
+	"wpn_fps_ass_heffy_762_bp_rpk",
+	"wpn_fps_ass_heffy_762_bp_rpk_folded"
+}
+
 --- Compatibility Array Insertion ---
 
 if self.wpn_fps_ass_heffy_545 then
@@ -677,6 +682,12 @@ self.parts.wpn_fps_ass_heffy_762_m_steel_75.weapon_reload_override 	 = {bm_w_hef
 
 --- Stocks ---
 
+--- Bipods ---
+for i, bp_id in ipairs(all_ak47bipod) do
+	self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[bp_id] = {a_obj = "a_bp_akmsu"}
+	self.parts.wpn_fps_ass_heffy_762_lfg_m70.override[bp_id]  = {a_obj = "a_bp_m70"}
+end
+
 ----------------------------------------
 ----<A><K><4><7> -Adds- <A><K><4><7>----
 ----------------------------------------
@@ -789,15 +800,11 @@ if self.wpn_fps_ass_heffy_545 then
 	
 end
 
-end )
-
-Hooks:PostHook( WeaponFactoryTweakData, "_init_cc_material_config", "AK47ModInit_cc_material_config", function(self)
-local parts = self.parts
 ----------------------------------------------------
 ----<A><K><4><7> -Matconfig_Arrays- <A><K><4><7>----
 ----------------------------------------------------
 
-local ak47_body = {
+local ak47_body_mat = {
 	"wpn_fps_ass_heffy_762_ba_ak47",
 	"wpn_fps_ass_heffy_762_ch_ak47",
 	"wpn_fps_ass_heffy_762_sp_ak47",
@@ -806,23 +813,91 @@ local ak47_body = {
 	"wpn_fps_ass_heffy_762_fgc_ak47",
 	"wpn_fps_ass_heffy_762_fh_ak47",
 	"wpn_fps_ass_heffy_762_lfgc_ak47",
-	"wpn_fps_ass_heffy_762_lr_ak47"
+	"wpn_fps_ass_heffy_762_lr_ak47",
+	"wpn_fps_ass_heffy_762_tr_ak47",
+	"wpn_fps_ass_heffy_762_rsb_ak47",
+	"wpn_fps_ass_heffy_762_fsl_ak47"
 }
 
+local ak47_furniture_mat = { 
+"wpn_fps_ass_heffy_762_pg_ak47",
+"wpn_fps_ass_heffy_762_lfg_ak47",
+"wpn_fps_ass_heffy_762_pg_ak47"
+}
+local ak103_body_mat = {
+"wpn_fps_ass_heffy_762_fsl_ak103",
+"wpn_fps_ass_heffy_762_lr_ak103",
+"wpn_fps_ass_heffy_762_tr_ak103",
+"wpn_fps_ass_heffy_762_ur_ak103"
+}
+local ak103_furniture_mat = {
+"wpn_fps_ass_heffy_762_lfg_ak103",
+"wpn_fps_ass_heffy_762_pg_ak103",
+"wpn_fps_ass_heffy_762_sad_ak103",
+"wpn_fps_ass_heffy_762_st_ak103",
+"wpn_fps_ass_heffy_762_ufg_ak103"
+}
+local ak104_body_mat = {
+"wpn_fps_ass_heffy_762_ba_ak104",
+"wpn_fps_ass_heffy_762_fh_ak104"
+}
 --------------------------------------------------------
 ----<A><K><4><7> -Matconfig_Definition- <A><K><4><7>----
 --------------------------------------------------------
 
 --- AK47 ---
 -- Body --
-for i, part_id in ipairs(ak47_body) do
-	if parts[part_id] then
-		parts[part_id].material_config = Idstring("units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/ak47_body")
-		parts[part_id].thq_material_config = Idstring("units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/ak47_body_thq")
+local ak47_matconfig = "units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/ak47_body"
+for i, part_id in ipairs(ak47_body_mat) do
+	if self.parts[part_id] then
+		self.parts[part_id].material_config 	= Idstring(ak47_matconfig)
+		self.parts[part_id].thq_material_config = Idstring(ak47_matconfig .. "_thq")
 	else
 		log("AK47_ERROR: (mat_config)Attempt to index Part ID: '" .. part_id .. "' (a nil value)")	
 	end
 end
---parts.wpn_fps_ass_heffy_762_st_ak47.material_config = Idstring("units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/ak47_stock")
---parts.wpn_fps_ass_heffy_762_st_ak47.thq_material_config = Idstring("units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/ak47_stock_thq")
+-- Furniture --
+ak47_matconfig = "units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/ak47_furniture"
+for i, part_id in ipairs(ak47_furniture_mat) do
+	if self.parts[part_id] then
+		self.parts[part_id].material_config 	= Idstring(ak47_matconfig)
+		self.parts[part_id].thq_material_config = Idstring(ak47_matconfig .. "_thq")
+	else
+		log("AK47_ERROR: (mat_config)Attempt to index Part ID: '" .. part_id .. "' (a nil value)")	
+	end
+end
+self.parts.wpn_fps_ass_heffy_762_st_ak47.material_config = Idstring("units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/ak47_stock")
+self.parts.wpn_fps_ass_heffy_762_st_ak47.thq_material_config = Idstring("units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/ak47_stock_thq")
+
+--- AK103 ---
+-- Body --
+local ak103_matconfig = "units/mods/weapons/wpn_fps_ass_heffy_762_ak103_pts/ak103_body"
+for i, part_id in ipairs(ak103_body_mat) do
+	if self.parts[part_id] then
+		self.parts[part_id].material_config 	= Idstring(ak103_matconfig)
+		self.parts[part_id].thq_material_config = Idstring(ak103_matconfig .. "_thq")
+	else
+		log("AK47_ERROR: (mat_config)Attempt to index Part ID: '" .. part_id .. "' (a nil value)")	
+	end
+end
+ak103_matconfig = "units/mods/weapons/wpn_fps_ass_heffy_762_ak103_pts/ak103_furniture"
+for i, part_id in ipairs(ak103_furniture_mat) do
+	if self.parts[part_id] then
+		self.parts[part_id].material_config 	= Idstring(ak103_matconfig)
+		self.parts[part_id].thq_material_config = Idstring(ak103_matconfig .. "_thq")
+	else
+		log("AK47_ERROR: (mat_config)Attempt to index Part ID: '" .. part_id .. "' (a nil value)")	
+	end
+end
+--- AK104 ---
+-- Body --
+local ak104_matconfig = "units/mods/weapons/wpn_fps_ass_heffy_762_ak104_pts/ak104_body"
+for i, part_id in ipairs(ak104_body_mat) do
+	if self.parts[part_id] then
+		self.parts[part_id].material_config 	= Idstring(ak104_matconfig)
+		self.parts[part_id].thq_material_config = Idstring(ak104_matconfig .. "_thq")
+	else
+		log("AK47_ERROR: (mat_config)Attempt to index Part ID: '" .. part_id .. "' (a nil value)")	
+	end
+end
 end)

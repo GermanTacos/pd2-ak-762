@@ -8,8 +8,8 @@
 - [x] Fix the fucking bolt model
 - [ ] Setup forbid for some AK74 parts with the M70 fg, VEPR barrel, AKMSU receiver, M92 receiver
 - [x] Remove "no lfg" from the uses parts table
-- [ ] Fix the AKMSU Stock on the AKM receiver (FUCK FUCK FUCK)
-- [ ] Fix the Bipod position on other length receivers (AKMSU)
+- [x] Fix the AKMSU Stock on the AKM receiver (FUCK FUCK FUCK)
+- [x] Fix the Bipod position on other length receivers (AKMSU)
 - [ ] Fix M92 lfgc texture
 - [ ] Fix Default flash hider on akmsu receiver
 - [ ] Fix missing flash hider icons
