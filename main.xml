@@ -233,15 +233,6 @@
 		<stats concealment="3" damage="0" spread="-1" spread_moving="-1" recoil="-1"/>
 		<forbids>
 			<value_node value="wpn_fps_ass_heffy_762_ba_ak109"/>
-			<value_node value="wpn_fps_ass_heffy_762_lfg_akm"/>
-			<value_node value="wpn_fps_ass_heffy_762_lfg_rpk"/>
-			<value_node value="wpn_fps_ass_heffy_762_lfg_ak103"/>
-			<value_node value="wpn_fps_ass_heffy_762_lfg_vepr"/>
-			<value_node value="wpn_fps_ass_heffy_762_lfg_bl_t56"/>
-			<value_node value="wpn_fps_ass_heffy_762_lfg_br_t56"/>
-			<value_node value="wpn_fps_ass_heffy_762_lfg_mpi"/>
-			<value_node value="wpn_fps_ass_heffy_762_lfg_amd63"/>
-			<value_node value="wpn_fps_ass_heffy_762_lfg_m70"/>
 			<value_node value="wpn_fps_ass_heffy_762_ufg_akm"/>
 			<value_node value="wpn_fps_ass_heffy_762_ufg_rpk"/>
 			<value_node value="wpn_fps_ass_heffy_762_ufg_ak103"/>
@@ -511,17 +502,6 @@
 		</override>
 		<forbids>
 			<value_node value="wpn_fps_ass_heffy_762_fh_ak47"/>
-			<value_node value="wpn_fps_ass_heffy_762_ufg_akm"/>
-			<value_node value="wpn_fps_ass_heffy_762_ufg_rpk"/>
-			<value_node value="wpn_fps_ass_heffy_762_ufg_bl_t56"/>
-			<value_node value="wpn_fps_ass_heffy_762_ufg_br_t56"/>
-			<value_node value="wpn_fps_ass_heffy_762_ufg_mpi"/>
-			<value_node value="wpn_fps_ass_heffy_762_ufg_ak103"/>
-			<value_node value="wpn_fps_ass_heffy_762_ufgc_akm"/>
-			<value_node value="wpn_fps_ass_heffy_762_lfgc_akm"/>
-			<value_node value="wpn_fps_ass_heffy_762_ufgc_rpk"/>
-			<value_node value="wpn_fps_ass_heffy_762_lfgc_rpk"/>
-			<value_node value="wpn_fps_ass_heffy_762_lfg_ak103"/>
 		</forbids>
 		<pcs/>
 	</WeaponMod>
