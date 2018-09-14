@@ -12,6 +12,7 @@
 - [x] Fix the Bipod position on other length receivers (AKMSU)
 - [ ] Fix M92 lfgc texture
 - [x] Fix Default flash hider on akmsu receiver
-- [ ] Fix missing flash hider icons
+- [x] Fix missing flash hider icons
 - [x] Add missing VEPR barrel forbids
 - [ ] Add missing Icons for compatebility parts
+- [ ] Add "no stock" attachment
