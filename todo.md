@@ -14,5 +14,5 @@
 - [x] Fix Default flash hider on akmsu receiver
 - [x] Fix missing flash hider icons
 - [x] Add missing VEPR barrel forbids
-- [ ] Add missing Icons for compatebility parts
+- [x] Add missing Icons for compatebility parts
 - [ ] Add "no stock" attachment
