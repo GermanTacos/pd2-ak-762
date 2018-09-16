@@ -353,6 +353,12 @@ self:SetupAttachmentPoint("heffy_762", {
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_ns_akmsu_m92", 
+        base_a_obj = "a_ns", 
+        position = Vector3( 0, -17.2, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_ns_akmsu_md90", 
         base_a_obj = "a_ns", 
         position = Vector3( 0, -10.1, 0 ), 
@@ -484,7 +490,7 @@ self:SetupAttachmentPoint("heffy_762", {
 	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_g_akmsu", 
         base_a_obj = "a_body", 
-        position = Vector3( 0, 0.5, 0.1 ), 
+        position = Vector3( 0, 0, 0.1 ), 
         rotation = Rotation( 0, 0, 0 )
 	})
 --- Stock Pads ---
