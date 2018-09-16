@@ -10,9 +10,11 @@
 - [x] Remove "no lfg" from the uses parts table
 - [x] Fix the AKMSU Stock on the AKM receiver (FUCK FUCK FUCK)
 - [x] Fix the Bipod position on other length receivers (AKMSU)
-- [ ] Fix M92 lfgc texture
+- [x] Fix M92 lfgc texture
 - [x] Fix Default flash hider on akmsu receiver
 - [x] Fix missing flash hider icons
 - [x] Add missing VEPR barrel forbids
 - [x] Add missing Icons for compatebility parts
-- [ ] Add "no stock" attachment
+- [x] Add "no stock" attachment
+- [ ] Fix receiver textures (M92, RPK, Tabuk)
+- [ ] Fix AKMSU receiver exploding barrel extensions

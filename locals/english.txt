@@ -164,9 +164,9 @@
 	
 	"bm_wp_wpn_fps_ass_heffy_762_so_pr"    : "Project Reality Firing Sounds",
 	
-	"bm_wp_wpn_fps_ass_heffy_762_fh_none" : "No Flashhider",
-	
+	"bm_wp_wpn_fps_ass_heffy_762_fh_none"  : "No Flash Hider",
 	"bm_wp_wpn_fps_ass_heffy_762_ufg_none" : "No Upper Foregrip",
 	"bm_wp_wpn_fps_ass_heffy_762_lfg_none" : "No Lower Foregrip",
+	"bm_wp_wpn_fps_ass_heffy_762_st_none"  : "No Stock",
 		
 }
