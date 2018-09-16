@@ -1192,6 +1192,15 @@
 		<pcs/>
 	</WeaponMod>
 		
+	<!-- Sound -->
+	
+	<WeaponMod id="wpn_fps_ass_heffy_762_so_pr" based_on="wpn_fps_upg_a_custom_free" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="sound" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+	<sound_switch suppressed="regular_b"/>
+	   <stats damage="0"/>
+	   <pcs/>
+    </WeaponMod>
+	
+	
 	<Weapon unlock_level="47">
 		<weapon id="heffy_762" based_on="flint" damage_near="25000" damage_far="40000" use_stance="heffy_762_ads" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="4" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_762">
 			<stats damage="98" spread="16" spread_moving="15" recoil="13" concealment="15" suppression="8"/>
@@ -1382,6 +1391,8 @@
 				<value_node value="wpn_fps_ass_heffy_762_ufg_none"/>
 				<value_node value="wpn_fps_ass_heffy_762_fh_none"/>
 				
+				<value_node value="wpn_fps_ass_heffy_762_so_pr"/>
+				
 			<!--<value_node value="wpn_fps_upg_m4_s_standard"/>
 				<value_node value="wpn_fps_upg_m4_s_pts"/>
 				<value_node value="wpn_fps_upg_m4_s_crane"/>
@@ -1440,10 +1451,10 @@
 	
 	<Sounds directory="assets">
 		<sound id="ak47_fire_single" path="sounds/ak47_fire_auto.ogg" prefix="regular"/>
-		<sound id="ak47_fire_single" path="sounds/ak47_blops_fire.ogg" prefix="regular_a"/>
-		<redirect id="ak47_fire_single" to="akm_fire" prefix="suppressed_a"/>
-		<redirect id="ak47_fire_single" to="akm_fire" prefix="suppressed_b"/>
-		<redirect id="ak47_fire_single" to="akm_fire" prefix="suppressed_c"/>
+		<sound id="ak47_fire_single" path="sounds/ak47_fire_sup.ogg"  prefix="suppressed_a"/>
+		<sound id="ak47_fire_single" path="sounds/ak47_fire_sup.ogg"  prefix="suppressed_b"/>
+		<sound id="ak47_fire_single" path="sounds/ak47_fire_sup.ogg"  prefix="suppressed_c"/>
+		<sound id="ak47_fire_single" path="sounds/ak47_pr_fire.ogg"   prefix="regular_b"/>
 	</Sounds>
 	
 	<AddFiles directory="assets">
