@@ -17,4 +17,4 @@
 - [x] Add missing Icons for compatebility parts
 - [x] Add "no stock" attachment
 - [ ] Fix receiver textures (M92, RPK, Tabuk)
-- [ ] Fix AKMSU receiver exploding barrel extensions
+- [x] Fix AKMSU receiver exploding barrel extensions
