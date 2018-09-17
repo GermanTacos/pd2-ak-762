@@ -18,3 +18,4 @@
 - [x] Add "no stock" attachment
 - [ ] Fix receiver textures (M92, RPK, Tabuk)
 - [x] Fix AKMSU receiver exploding barrel extensions
+- [ ] Add "no stock" attachment icon

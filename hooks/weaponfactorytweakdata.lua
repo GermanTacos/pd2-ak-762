@@ -815,8 +815,8 @@ end
 ------------------------------------------
 
 --- Stance overrides by barrels ---
-self.parts.wpn_fps_ass_heffy_762_ba_akmsu.weapon_stance_override = {bm_w_heffy_762 = "akmsu_ads"}
-self.parts.wpn_fps_ass_heffy_762_ba_m92.weapon_stance_override   = {bm_w_heffy_762 = "akmsu_ads"}
+self.parts.wpn_fps_ass_heffy_762_lr_akmsu.weapon_stance_override = {bm_w_heffy_762 = "akmsu_ads"}
+self.parts.wpn_fps_ass_heffy_762_lr_m92.weapon_stance_override   = {bm_w_heffy_762 = "akmsu_ads"}
 
 --- Vanilla sights ---
 -- non-acoc, default sights --
