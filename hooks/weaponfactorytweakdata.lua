@@ -156,7 +156,8 @@ local all_ak47stock = {
 	"wpn_fps_ass_heffy_762_st_amd63",
 	"wpn_fps_ass_heffy_762_st_amd65",
 	"wpn_fps_ass_heffy_762_st_tabuk",
-	"wpn_fps_ass_heffy_762_st_rk62"
+	"wpn_fps_ass_heffy_762_st_rk62",
+	"wpn_fps_ass_heffy_762_st_none"
 }
 local akmstock = {
 	"wpn_fps_ass_heffy_762_st_akm",
