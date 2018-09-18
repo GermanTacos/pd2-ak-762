@@ -1282,6 +1282,13 @@
 				<value_node value="wpn_fps_ass_heffy_762_pg_ak47"/>
 				<value_node value="wpn_fps_ass_heffy_762_st_ak47"/>
 			
+				<value_node value="wpn_fps_ass_heffy_762_chb_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_rs_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_gb_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_int1_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_int2_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_int3_ak47"/>
+				
 				<value_node value="wpn_fps_ass_heffy_762_ba_akm"/>
 				<value_node value="wpn_fps_ass_heffy_762_fh_akm"/>
 				<value_node value="wpn_fps_ass_heffy_762_ch_akm"/>

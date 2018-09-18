@@ -438,6 +438,8 @@ if self.wpn_fps_ass_heffy_545 then
 			table.insert(self.wpn_fps_ass_heffy_762.uses_parts, part_id)
 		end
     end
+	self.parts.wpn_fps_ass_heffy_762_st_vepr.override.wpn_fps_ass_heffy_all_pg_ak74 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"}
+	self.parts.wpn_fps_ass_heffy_762_st_vepr.override.wpn_fps_ass_heffy_545_pg_ak74 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"}
 end
 
 --------------------------------------------
@@ -753,8 +755,10 @@ end
 
 --- Pistol grips ---
 -- AKM grips forbids --
-for i, g_id in ipairs(akmgrips) do
-	self:akpack_setup_forbid( g_id, "wpn_fps_ass_heffy_762_st_vepr" )
+for i, g_id in ipairs(all_ak47grips) do
+	if g_id ~= "wpn_fps_ass_heffy_762_pg_ak47" and g_id ~= "wpn_fps_ass_heffy_all_pg_ak74" then
+		self:akpack_setup_forbid( g_id, "wpn_fps_ass_heffy_762_st_vepr" )
+	end
 end
 for i, lfg_id in ipairs(all_ak47lowerforegrip) do
 	if lfg_id ~= "wpn_fps_ass_heffy_762_lfg_ak47" then
