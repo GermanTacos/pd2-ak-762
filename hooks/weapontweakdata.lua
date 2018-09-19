@@ -65,6 +65,20 @@ self:SetupAttachmentPoint("heffy_762", {
         position = Vector3( 0, 0, 2.85 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
+--- Scopes ---
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_o_akmsu", 
+        base_a_obj = "a_o", 
+        position = Vector3( 0, -8.5, 0.5 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_o_akmsu_acog", 
+        base_a_obj = "a_o", 
+        position = Vector3( 0, -9.1, 0.5 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	
 --- Rear Sight ---
 self:SetupAttachmentPoint("heffy_762", {
 		name = "a_ro_ak109", 

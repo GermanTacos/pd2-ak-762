@@ -22,6 +22,8 @@
 	"bm_menu_underbarrel_sight_plural"  : "Underbarrel Sights",
 	"bm_menu_sound"        				: "Sound",
 	"bm_menu_sound_plural" 				: "Sounds",
+	"bm_menu_drag_handle"        		: "Bolt",
+	"bm_menu_drag_handle_plural" 		: "Bolts",
 	"bm_menu_custom"        			: "Custom",
 	"bm_menu_custom_plural" 			: "Customs",
 	"bm_menu_mag_color"        			: "Magazine Color",

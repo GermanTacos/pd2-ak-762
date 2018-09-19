@@ -729,6 +729,16 @@ end
 
 -- Barrel Override --
 self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override.wpn_fps_ass_heffy_762_ba_ak109 = {override = {wpn_fps_ass_heffy_762_ro_ak47 = {a_obj="a_ro_ak109_akmsu"}}}
+-- Scope override --
+for i, o_id in ipairs(all_ak47sight) do
+	if o_id ~= "wpn_fps_upg_o_acog" then
+		self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[o_id] = {a_obj = "a_o_akmsu", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 7, -2.8)}}}
+		self.parts.wpn_fps_ass_heffy_762_lr_m92.override[o_id]   = {a_obj = "a_o_akmsu", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 7, -2.8)}}}
+	else
+		self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[o_id] = {a_obj = "a_o_akmsu_acog", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 5, -2.8)}}}
+		self.parts.wpn_fps_ass_heffy_762_lr_m92.override[o_id]   = {a_obj = "a_o_akmsu_acog", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 5, -2.8)}}}
+	end
+end
 --- Magazines ---
 self.parts.wpn_fps_ass_heffy_762_m_steel_75.weapon_reload_override 	 = {bm_w_heffy_762 = "tecci"}
 
@@ -813,6 +823,7 @@ for i, lr_id in ipairs(akmsulower) do
 				self:akpack_setup_forbid( lr_id, ufg_id )
 			end
 		end
+		self:akpack_setup_forbid( lr_id, "wpn_fps_upg_o_cs" )
 	end
 end
 ------------------------------------------
@@ -829,7 +840,7 @@ for i, o_id in ipairs(nonacog_aksight) do
 	self.parts[o_id].stance_mod.wpn_fps_ass_heffy_762 = {translation = Vector3(0, 7, -3.7)}
 end
 -- other sights --
-self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_heffy_762 			   = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_flint)
+self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_heffy_762 			   = {translation = Vector3(0, 5, -3.7)}
 self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_heffy_762 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_flint)
 self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_heffy_762 = deep_clone(self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_flint)
 self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_heffy_762 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_flint)

@@ -256,6 +256,8 @@
 			<wpn_fps_ass_heffy_762_ro_akm		unit="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_ro_akmsu" />
 			<wpn_fps_ass_heffy_762_st_vepr 		a_obj="a_s_akmsu_ak47" /> 
 			<wpn_fps_ass_heffy_762_st_ak47 		a_obj="a_s_akmsu_ak47" /> 
+			<wpn_fps_upg_o_ak47_scopemount  	unit="units/mods/weapons/wpn_fps_ass_heffy_762_shared_pts/wpn_fps_upg_o_ak47_c_scopemount"  />
+			<wpn_fps_upg_o_ak47_l_scopemount 	unit="units/mods/weapons/wpn_fps_ass_heffy_762_shared_pts/wpn_fps_upg_o_ak47_lc_scopemount"  />
 		</override>
 		<pcs/>
 	</WeaponMod>
@@ -927,6 +929,8 @@
 			<wpn_fps_ass_heffy_762_st_vepr 		a_obj = "a_s_akm" />
 			<wpn_fps_ass_heffy_762_st_ak47 		a_obj = "a_s_akm" />
 			<wpn_fps_ass_heffy_762_st_akmsu 	a_obj = "a_s_akm_akmsu" />
+			<wpn_fps_upg_o_ak47_scopemount   unit="units/mods/weapons/wpn_fps_ass_heffy_762_shared_pts/wpn_fps_upg_o_ak47_c_scopemount"  />
+			<wpn_fps_upg_o_ak47_l_scopemount unit="units/mods/weapons/wpn_fps_ass_heffy_762_shared_pts/wpn_fps_upg_o_ak47_lc_scopemount"  />
 		</override>
 		<pcs/>
 	</WeaponMod>
