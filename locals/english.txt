@@ -31,7 +31,7 @@
 	"bm_menu_fire_selector"       		: "Selector Switch",
 	"bm_menu_fire_selector_plural" 		: "Selector Switches",
 	
-	"menu_l_global_value_heffy_762" 	: "This is a AK Pack Weapon!",
+	"menu_l_global_value_heffy_762" 	: "This is an AK Pack Weapon!",
 	
 	"bm_wp_wpn_fps_upg_o_ak47_l_scopemount" : "Lower Scope Mount",
 	
