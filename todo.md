@@ -16,6 +16,6 @@
 - [x] Add missing VEPR barrel forbids
 - [x] Add missing Icons for compatebility parts
 - [x] Add "no stock" attachment
-- [ ] Fix receiver textures (M92, RPK, Tabuk)
+- [x] Fix receiver textures (M92, RPK, Tabuk)
 - [x] Fix AKMSU receiver exploding barrel extensions
 - [x] Add "no stock" attachment icon
