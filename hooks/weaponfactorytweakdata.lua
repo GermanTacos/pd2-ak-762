@@ -734,9 +734,11 @@ for i, o_id in ipairs(all_ak47sight) do
 	if o_id ~= "wpn_fps_upg_o_acog" then
 		self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[o_id] = {a_obj = "a_o_akmsu", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 7, -2.8)}}}
 		self.parts.wpn_fps_ass_heffy_762_lr_m92.override[o_id]   = {a_obj = "a_o_akmsu", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 7, -2.8)}}}
+		self.parts.wpn_fps_ass_heffy_762_ro_m92.override[o_id]   = {a_obj = "a_o_akmsu", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 7, -2.8)}}}
 	else
 		self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[o_id] = {a_obj = "a_o_akmsu_acog", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 5, -2.8)}}}
 		self.parts.wpn_fps_ass_heffy_762_lr_m92.override[o_id]   = {a_obj = "a_o_akmsu_acog", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 5, -2.8)}}}
+		self.parts.wpn_fps_ass_heffy_762_ro_m92.override[o_id]   = {a_obj = "a_o_akmsu_acog", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 5, -2.8)}}}
 	end
 end
 --- Magazines ---
@@ -833,6 +835,7 @@ end
 --- Stance overrides by barrels ---
 self.parts.wpn_fps_ass_heffy_762_lr_akmsu.weapon_stance_override = {bm_w_heffy_762 = "akmsu_ads"}
 self.parts.wpn_fps_ass_heffy_762_lr_m92.weapon_stance_override   = {bm_w_heffy_762 = "akmsu_ads"}
+self.parts.wpn_fps_ass_heffy_762_ro_m92.weapon_stance_override   = {bm_w_heffy_762 = "akmsu_ads"}
 
 --- Vanilla sights ---
 -- non-acoc, default sights --
