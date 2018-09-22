@@ -117,6 +117,9 @@
 	"bm_wp_wpn_fps_ass_heffy_762_stp_mpi" : "Wire Stock Pad",
 	"bm_wp_wpn_fps_ass_heffy_762_pg_mpi" : "MPi-KM Grip",
 	
+	"bm_wp_wpn_fps_ass_heffy_762_ufg_mpi_wood" : "Wooden MPi-KM Upper Foregrip",
+	"bm_wp_wpn_fps_ass_heffy_762_lfg_mpi_wood" : "Wooden MPi-KM Lower Foregrip",
+	
 	"bm_wp_wpn_fps_ass_heffy_762_ba_amd63" : "AMD-63 Barrel",
 	"bm_wp_wpn_fps_ass_heffy_762_fh_amd63" : "AMD-63 Flash Hider",
 	"bm_wp_wpn_fps_ass_heffy_762_lfg_amd63" : "AMD-63 Lower Foregrip",

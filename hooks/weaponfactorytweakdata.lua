@@ -198,6 +198,7 @@ local all_ak47lowerforegrip = {
 	"wpn_fps_ass_heffy_762_lfg_bl_t56",
 	"wpn_fps_ass_heffy_762_lfg_br_t56",
 	"wpn_fps_ass_heffy_762_lfg_mpi",
+	"wpn_fps_ass_heffy_762_lfg_mpi_wood",
 	"wpn_fps_ass_heffy_762_lfg_amd63",
 	"wpn_fps_ass_heffy_762_lfg_m70",
 	"wpn_fps_ass_heffy_762_lfg_m92",
@@ -213,6 +214,7 @@ local ak47foregrip = {
 	"wpn_fps_ass_heffy_762_lfg_bl_t56",
 	"wpn_fps_ass_heffy_762_lfg_br_t56",
 	"wpn_fps_ass_heffy_762_lfg_mpi",
+	"wpn_fps_ass_heffy_762_lfg_mpi_wood",
 	"wpn_fps_ass_heffy_762_lfg_amd63"
 }
 local all_ak47upperforegrip = {
@@ -225,6 +227,7 @@ local all_ak47upperforegrip = {
 	"wpn_fps_ass_heffy_762_ufg_bl_t56",
 	"wpn_fps_ass_heffy_762_ufg_br_t56",
 	"wpn_fps_ass_heffy_762_ufg_mpi",
+	"wpn_fps_ass_heffy_762_ufg_mpi_wood",
 	"wpn_fps_ass_heffy_762_ufg_m70",
 	"wpn_fps_ass_heffy_762_ufg_m92",
 	"wpn_fps_ass_heffy_762_ufg_none"
