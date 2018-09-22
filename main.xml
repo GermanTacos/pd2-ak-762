@@ -2584,6 +2584,7 @@
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762/wpn_fps_ass_heffy_762_npc"/>
 		
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/heffy_762"/>
+		<texture         path="guis/textures/pd2/blackmarket/icons/weapons/outline/heffy_762"/>
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_762_ba_ak104"/>
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_762_ba_ak109"/>
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_762_ba_akm"/>
