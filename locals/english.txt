@@ -53,6 +53,10 @@
 	"bm_wp_wpn_fps_ass_heffy_762_ur_akm" : "AKM Dust Cover",
 	"bm_wp_wpn_fps_ass_heffy_762_fsl_akm" : "AKM Selector Switch",
 	
+	"bm_wp_wpn_fps_ass_heffy_762_ufg_akm_worn" : "Worn AKM Upper Foregrip",
+	"bm_wp_wpn_fps_ass_heffy_762_lfg_akm_worn" : "Worn AKM Lower Foregrip",
+	"bm_wp_wpn_fps_ass_heffy_762_st_akm_worn"  : "Worn AKM Stock",
+	
 	"bm_wp_wpn_fps_ass_heffy_762_st_akms" : "AKMS Stock",
 	
 	"bm_wp_wpn_fps_ass_heffy_762_ba_akmsu" : "AKMSU Barrel",
