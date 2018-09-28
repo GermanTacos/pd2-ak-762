@@ -1525,7 +1525,7 @@
 		
 	</Weapon>
 	
-	<Sounds directory="assets\sounds">
+	<Sounds directory="assets">
 		<sound id="ak47_fire_single" path="sounds/ak47_fire_auto.ogg" prefix="regular"/>
 		<sound id="ak47_fire_single" path="sounds/ak47_fire_sup.ogg"  prefix="suppressed_a"/>
 		<sound id="ak47_fire_single" path="sounds/ak47_fire_sup.ogg"  prefix="suppressed_b"/>
