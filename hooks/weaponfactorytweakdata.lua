@@ -776,7 +776,7 @@ for i, o_id in ipairs(all_ak47sight) do
 	end
 end
 --- Magazines ---
-self.parts.wpn_fps_ass_heffy_762_m_steel_75.weapon_reload_override 	 = {bm_w_heffy_762 = "tecci"}
+self.parts.wpn_fps_ass_heffy_762_m_steel_75.weapon_reload_override 	 = {bm_w_heffy_762 = "tecci"} --tecci
 
 --- Stocks ---
 
