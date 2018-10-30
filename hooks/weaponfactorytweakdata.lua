@@ -377,7 +377,7 @@ if self.wpn_fps_ass_heffy_545 then
 		"wpn_fps_ass_heffy_545_st_mpi",
 	}
 	
-	for i, part_id in ipairs(ak74stocks) do
+	for id, part_id in pairs(ak74stocks) do
 		table.insert(all_ak47stock, part_id)
 		table.insert(akmstock, part_id)
 	end
@@ -390,7 +390,7 @@ if self.wpn_fps_ass_heffy_545 then
 		"wpn_fps_ass_heffy_545_stp_mpi",
 	}
 	
-	for i, part_id in ipairs(ak74stockparts) do
+	for id, part_id in pairs(ak74stockparts) do
 		table.insert(akmstockpad, part_id)
 	end
 	
@@ -399,7 +399,7 @@ if self.wpn_fps_ass_heffy_545 then
 		"wpn_fps_ass_heffy_545_pg_mpi",
 	}
 	
-	for i, part_id in ipairs(ak74grips) do
+	for id, part_id in pairs(ak74grips) do
 		table.insert(all_ak47grips, part_id)
 		table.insert(akmgrips, part_id)
 	end
@@ -410,7 +410,7 @@ if self.wpn_fps_ass_heffy_545 then
 		"wpn_fps_ass_heffy_545_lfg_mpi"
 	}
 	
-	for i, part_id in ipairs(ak74lfg) do
+	for id, part_id in pairs(ak74lfg) do
 		table.insert(all_ak47lowerforegrip, part_id)
 		table.insert(ak47foregrip, part_id)
 	end
@@ -422,7 +422,7 @@ if self.wpn_fps_ass_heffy_545 then
 		"wpn_fps_ass_heffy_545_ufg_tantal"
 	}
 	
-	for i, part_id in ipairs(ak74ufg) do
+	for id, part_id in pairs(ak74ufg) do
 		table.insert(all_ak47upperforegrip, part_id)
 	end
 
@@ -441,7 +441,7 @@ if self.wpn_fps_ass_heffy_545 then
 		"wpn_fps_ass_heffy_545_ufg_tantal",
 	}
 	
-    for i, part_id in ipairs(all_ak74parts) do
+    for id, part_id in pairs(all_ak74parts) do
 		if self.parts[part_id].pcs then
 			table.insert(self.wpn_fps_ass_heffy_762.uses_parts, part_id)
 		end
@@ -459,7 +459,7 @@ if BeardLib.Utils:FindMod("gsup") then
 		"wpn_fps_ass_ns_g_sup4",
 		"wpn_fps_ass_ns_g_sup5"
 	}
-	for i, part_id in ipairs(AK47SneakySuppressorPack) do
+	for id, part_id in pairs(AK47SneakySuppressorPack) do
 		table.insert(self.wpn_fps_ass_heffy_762.uses_parts, part_id)
 		table.insert(all_ak47ext, part_id)
 	end
@@ -483,18 +483,18 @@ end
 --- Gun ---
 
 --- Barrel ---
-for i, ba_id in ipairs(all_ak47barrel) do
+for id, ba_id in pairs(all_ak47barrel) do
 	self:akpack_check_override( "part", ba_id )
 end
 --self.parts.wpn_fps_ass_heffy_762_ba_akm.override.wpn_fps_ass_heffy_762_fh_dummy = {unit="units/mods/weapons/wpn_fps_ass_heffy_762_akm_pts/wpn_fps_ass_heffy_762_fh_akm"}
 -- Default length barrel barrel extension and front sight override --
-for i, ba_id in ipairs(ak47barrel) do
-	for i, ext_id in ipairs(all_ak47ext) do
+for id, ba_id in pairs(ak47barrel) do
+	for id, ext_id in pairs(all_ak47ext) do
 		if ext_id ~= "wpn_fps_ass_heffy_762_fh_dummy" then
 			self.parts[ba_id].override[ext_id] = {a_obj = "a_ns"}
 		end
 	end
-	for i, fo_id in ipairs(all_ak47fo) do
+	for id, fo_id in pairs(all_ak47fo) do
 		self.parts[ba_id].override[fo_id] = {}
 	end
 end
@@ -505,7 +505,7 @@ self.parts.wpn_fps_ass_heffy_762_ba_ak109.override.wpn_fps_ass_heffy_762_fh_dumm
 
 
 -- Other length barrel barrel extension overrides --
-for i, ext_id in ipairs(all_ak47ext) do
+for id, ext_id in pairs(all_ak47ext) do
 	if ext_id == "wpn_fps_ass_heffy_762_fh_dummy" then
 		self.parts.wpn_fps_ass_heffy_762_ba_tabuk.override[ext_id] = {a_obj = "a_ns_tabuk", unit="units/mods/weapons/wpn_fps_ass_heffy_762_tabuk_pts/wpn_fps_ass_heffy_762_fh_tabuk"}
 		self.parts.wpn_fps_ass_heffy_762_ba_akmsu.override[ext_id] = {a_obj = "a_ns_akmsu", unit="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_fh_akmsu"}
@@ -528,7 +528,7 @@ for i, ext_id in ipairs(all_ak47ext) do
 	end
 end
 -- Other length barrel Front Sight overrides --
-for i, fo_id in ipairs(all_ak47fo) do
+for id, fo_id in pairs(all_ak47fo) do
 	self.parts.wpn_fps_ass_heffy_762_ba_ak104.override[fo_id] = {a_obj = "a_fo_ak104"}
 	self.parts.wpn_fps_ass_heffy_762_ba_akmsu.override[fo_id] = {a_obj = "a_fo_akmsu"}
 	self.parts.wpn_fps_ass_heffy_762_ba_m92.override[fo_id]   = {a_obj = "a_fo_akmsu"}
@@ -542,25 +542,25 @@ end
 
 --- Fore Grip ---
 -- Default length fg barrel position override --
-for i, fg_id in ipairs(ak47foregrip) do
+for id, fg_id in pairs(ak47foregrip) do
 	self:akpack_check_override( "part", fg_id )
-	for i, ba_id in ipairs(ak47barrel) do
+	for id, ba_id in pairs(ak47barrel) do
 		self.parts[fg_id].override[ba_id] = {}
 	end
 end
 -- Barrel position override by lfgs --
 self:akpack_check_override( "part", "wpn_fps_ass_heffy_762_lfg_m70" )
-for i, ba_id in ipairs(all_ak47barrel) do
+for id, ba_id in pairs(all_ak47barrel) do
 	self.parts.wpn_fps_ass_heffy_762_lfg_m70.override[ba_id]   = {a_obj = "a_b_m70"}
 	self.parts.wpn_fps_ass_heffy_762_lfg_m70.override[ba_id].override   = self.parts.wpn_fps_ass_heffy_762_lfg_m70.override[ba_id].override or {}
 end
 -- Front sight overrides by lfgs --
-for i, ba_id in ipairs(ak47barrel) do
-	for i, fo_id in ipairs(all_ak47fo) do
+for id, ba_id in pairs(ak47barrel) do
+	for id, fo_id in pairs(all_ak47fo) do
 		self.parts.wpn_fps_ass_heffy_762_lfg_m70.override[ba_id].override[fo_id]   = {a_obj = "a_fo_m70_std"}
 	end
 end
-for i, fo_id in ipairs(all_ak47fo) do
+for id, fo_id in pairs(all_ak47fo) do
 	self.parts.wpn_fps_ass_heffy_762_lfg_m70.override.wpn_fps_ass_heffy_762_ba_rpk.override[fo_id] 	 = {a_obj = "a_fo_m70_rpk"}
 	self.parts.wpn_fps_ass_heffy_762_lfg_m70.override.wpn_fps_ass_heffy_762_ba_tabuk.override[fo_id] = {a_obj = "a_fo_m70_tabuk"}
 	self.parts.wpn_fps_ass_heffy_762_lfg_m70.override.wpn_fps_ass_heffy_762_ba_akmsu.override[fo_id] = {a_obj = "a_fo_m70_akmsu"}
@@ -572,8 +572,8 @@ for i, fo_id in ipairs(all_ak47fo) do
 	self.parts.wpn_fps_ass_heffy_762_lfg_m70.override.wpn_fps_ass_heffy_762_ba_amd65.override[fo_id] = {a_obj = "a_fo_m70_amd65"}
 end
 -- Barrel Extensions position override by lfgs --
-for i, ba_id in ipairs(ak47barrel) do
-	for i, ext_id in ipairs(all_ak47ext) do
+for id, ba_id in pairs(ak47barrel) do
+	for id, ext_id in pairs(all_ak47ext) do
 		if ext_id ~= "wpn_fps_ass_heffy_762_fh_dummy" then
 			self.parts.wpn_fps_ass_heffy_762_lfg_m70.override[ba_id].override[ext_id] = {a_obj = "a_ns_m70_std"}
 		end
@@ -586,7 +586,7 @@ self.parts.wpn_fps_ass_heffy_762_lfg_m70.override.wpn_fps_ass_heffy_762_ba_amd63
 self.parts.wpn_fps_ass_heffy_762_lfg_m70.override.wpn_fps_ass_heffy_762_ba_ak47.override.wpn_fps_ass_heffy_762_fh_dummy  = {a_obj = "a_ns_m70_std", unit="units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/wpn_fps_ass_heffy_762_fh_ak47"}
 self.parts.wpn_fps_ass_heffy_762_lfg_m70.override.wpn_fps_ass_heffy_762_ba_ak109.override.wpn_fps_ass_heffy_762_fh_dummy = {a_obj = "a_ns_m70_std", unit="units/mods/weapons/wpn_fps_ass_heffy_762_ak103_pts/wpn_fps_ass_heffy_762_fh_ak103"}
 
-for i, ext_id in ipairs(all_ak47ext) do
+for id, ext_id in pairs(all_ak47ext) do
 	if ext_id == "wpn_fps_ass_heffy_762_fh_dummy" then
 		self.parts.wpn_fps_ass_heffy_762_lfg_m70.override.wpn_fps_ass_heffy_762_ba_tabuk.override[ext_id] = {a_obj = "a_ns_m70_tabuk", unit="units/mods/weapons/wpn_fps_ass_heffy_762_tabuk_pts/wpn_fps_ass_heffy_762_fh_tabuk"}
 		self.parts.wpn_fps_ass_heffy_762_lfg_m70.override.wpn_fps_ass_heffy_762_ba_akmsu.override[ext_id] = {a_obj = "a_ns_m70_akmsu", unit="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_fh_akmsu"}
@@ -617,7 +617,7 @@ self:akpack_check_override( "part", "wpn_fps_ass_heffy_762_lr_akmsu" )
 self:akpack_check_override( "part", "wpn_fps_ass_heffy_762_lr_rpk" )
 self:akpack_check_override( "part", "wpn_fps_ass_heffy_762_lr_m92" )
 --Stock overrides--
-for i, st_id in ipairs(akmstock) do
+for id, st_id in pairs(akmstock) do
 	if st_id ~= "wpn_fps_ass_heffy_762_st_akms" then
 		self.parts.wpn_fps_ass_heffy_762_lr_ak47.override[st_id]  = {a_obj = "a_s_ak47"}
 	end
@@ -627,7 +627,7 @@ for i, st_id in ipairs(akmstock) do
 	end
 end
 self:akpack_check_override( "part", "wpn_fps_ass_heffy_762_st_vepr" )
-for i, lr_id in ipairs(all_ak47lower) do
+for id, lr_id in pairs(all_ak47lower) do
 	self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_vepr  = {}
 	self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_vepr.override = self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_vepr.override or {}
 	self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_vepr.override.wpn_fps_ass_heffy_762_sp_ak47   = {a_obj="a_s_vepr"}
@@ -636,18 +636,18 @@ for i, lr_id in ipairs(all_ak47lower) do
 end
 
 --Stock Pad overrides--
-for i, lr_id in ipairs(all_ak47lower) do
-	for i, st_id in ipairs(all_ak47stock) do
+for id, lr_id in pairs(all_ak47lower) do
+	for id, st_id in pairs(all_ak47stock) do
 		self.parts[lr_id].override[st_id] = self.parts[lr_id].override[st_id] or {}
 		self.parts[lr_id].override[st_id].override = self.parts[lr_id].override[st_id].override or {}
 	end
 end
---for i, lr_id in ipairs(all_ak47lower) do
+--for id, lr_id in pairs(all_ak47lower) do
 --	self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_ak47 = self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_ak47 or {}
 --	self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_ak47.override = self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_ak47.override or {}
 --end
-for i, st_id in ipairs(akmstock) do
-	for i, sp_id in ipairs(akmstockpad) do
+for id, st_id in pairs(akmstock) do
+	for id, sp_id in pairs(akmstockpad) do
 		self.parts.wpn_fps_ass_heffy_762_lr_ak47.override[st_id].override[sp_id]  = {a_obj = "a_s_ak47"}
 		self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[st_id].override[sp_id] = {a_obj = "a_s_akmsu"}
 		self.parts.wpn_fps_ass_heffy_762_lr_ak103.override[st_id].override[sp_id] = {a_obj = "a_s_akmsu"}
@@ -655,9 +655,9 @@ for i, st_id in ipairs(akmstock) do
 	end
 end
 --[[
-for i, st_id in ipairs(all_ak47stock)
+for id, st_id in pairs(all_ak47stock)
 	if st_id ~= "wpn_fps_ass_heffy_762_st_vepr" then
-		for i, g_id in ipairs(akmgrips) do
+		for id, g_id in pairs(akmgrips) do
 			self.parts.wpn_fps_ass_heffy_762_lr_akm.override[st_id].override[g_id]   = {a_obj = "a_g_akm"}
 			self.parts.wpn_fps_ass_heffy_762_lr_vepr.override[st_id].override[g_id]   = {a_obj = "a_g_akm"}
 			self.parts.wpn_fps_ass_heffy_762_lr_rpk.override[st_id].override[g_id]   = {a_obj = "a_g_akm"}
@@ -674,20 +674,20 @@ for i, st_id in ipairs(all_ak47stock)
 	end
 end
 --]]
-for i, lr_id in ipairs(akmsulower) do
-	for i, st_id in ipairs(all_ak47stock) do
+for id, lr_id in pairs(akmsulower) do
+	for id, st_id in pairs(all_ak47stock) do
 		if st_id ~= "wpn_fps_ass_heffy_762_st_vepr" then
-			for i, g_id in ipairs(all_ak47grips) do
+			for id, g_id in pairs(all_ak47grips) do
 				self.parts[lr_id].override[st_id].override[g_id] = {a_obj = "a_g_akmsu"}
 			end
 			self.parts[lr_id].override[st_id].override.wpn_fps_ass_heffy_762_sp_ak47 = {a_obj = "a_s_akmsu_ak47"}
 		end
 	end
 end
-for i, lr_id in ipairs(akmlower) do
-	for i, st_id in ipairs(all_ak47stock) do
+for id, lr_id in pairs(akmlower) do
+	for id, st_id in pairs(all_ak47stock) do
 		if st_id ~= "wpn_fps_ass_heffy_762_st_vepr" then
-			for i, g_id in ipairs(all_ak47grips) do
+			for id, g_id in pairs(all_ak47grips) do
 				self.parts[lr_id].override[st_id].override[g_id] = {a_obj = "a_g_akm"}
 			end
 			self.parts[lr_id].override[st_id].override.wpn_fps_ass_heffy_762_sp_ak47 = {a_obj = "a_s_akm"}
@@ -695,20 +695,20 @@ for i, lr_id in ipairs(akmlower) do
 	end
 end
 -- Barrel position override by lrs --
-for i, ba_id in ipairs(all_ak47barrel) do
+for id, ba_id in pairs(all_ak47barrel) do
 	self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[ba_id] = {a_obj = "a_b_akmsu"}	
 	self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[ba_id].override = self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[ba_id].override or {}
 --	self.parts.wpn_fps_ass_heffy_762_lr_m92.override[ba_id] = {a_obj = "a_b_m92"}	
 --	self.parts.wpn_fps_ass_heffy_762_lr_m92.override[ba_id].override = self.parts.wpn_fps_ass_heffy_762_lr_m92.override[ba_id].override or {}
 end
 -- Front sight overrides by lrs --
-for i, ba_id in ipairs(ak47barrel) do
-	for i, fo_id in ipairs(all_ak47fo) do
+for id, ba_id in pairs(ak47barrel) do
+	for id, fo_id in pairs(all_ak47fo) do
 		self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[ba_id].override[fo_id] = {a_obj = "a_fo_akmsu_std"}
 --		self.parts.wpn_fps_ass_heffy_762_lr_m92.override[ba_id].override[fo_id]   = {a_obj = "a_fo_m92_std"}
 	end
 end
-for i, fo_id in ipairs(all_ak47fo) do
+for id, fo_id in pairs(all_ak47fo) do
 	self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override.wpn_fps_ass_heffy_762_ba_rpk.override[fo_id]   = {a_obj = "a_fo_akmsu_rpk"}
 	self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override.wpn_fps_ass_heffy_762_ba_tabuk.override[fo_id] = {a_obj = "a_fo_akmsu_tabuk"}
 	self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override.wpn_fps_ass_heffy_762_ba_akmsu.override[fo_id] = {a_obj = "a_fo_akmsu_akmsu"}
@@ -720,8 +720,8 @@ for i, fo_id in ipairs(all_ak47fo) do
 	self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override.wpn_fps_ass_heffy_762_ba_amd65.override[fo_id] = {a_obj = "a_fo_akmsu_amd65"}
 end
 -- Barrel Extensions position override by lrs --
-for i, ba_id in ipairs(ak47barrel) do
-	for i, ext_id in ipairs(all_ak47ext) do
+for id, ba_id in pairs(ak47barrel) do
+	for id, ext_id in pairs(all_ak47ext) do
 		if ext_id ~= "wpn_fps_ass_heffy_762_fh_dummy" then
 			self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[ba_id].override[ext_id] = {a_obj = "a_ns_akmsu_std"}
 --			self.parts.wpn_fps_ass_heffy_762_lr_m92.override[ba_id].override[ext_id]   = {a_obj = "a_ns_m92_std"}
@@ -737,7 +737,7 @@ self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override.wpn_fps_ass_heffy_762_ba_ak10
 --self.parts.wpn_fps_ass_heffy_762_lr_m92.override.wpn_fps_ass_heffy_762_ba_t56.override.wpn_fps_ass_heffy_762_fh_dummy   = {a_obj = "a_ns_akmsu_std", unit="units/mods/weapons/wpn_fps_ass_heffy_762_t56_pts/wpn_fps_ass_heffy_762_fh_t56"}
 --self.parts.wpn_fps_ass_heffy_762_lr_m92.override.wpn_fps_ass_heffy_762_ba_amd63.override.wpn_fps_ass_heffy_762_fh_dummy = {a_obj = "a_ns_akmsu_std", unit="units/mods/weapons/wpn_fps_ass_heffy_762_amd63_pts/wpn_fps_ass_heffy_762_fh_amd63"}
 
-for i, ext_id in ipairs(all_ak47ext) do
+for id, ext_id in pairs(all_ak47ext) do
 	if ext_id == "wpn_fps_ass_heffy_762_fh_dummy" then
 		self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override.wpn_fps_ass_heffy_762_ba_tabuk.override[ext_id] = {a_obj = "a_ns_akmsu_tabuk", unit="units/mods/weapons/wpn_fps_ass_heffy_762_tabuk_pts/wpn_fps_ass_heffy_762_fh_tabuk"}
 		self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override.wpn_fps_ass_heffy_762_ba_akmsu.override[ext_id] = {a_obj = "a_ns_akmsu_akmsu", unit="units/mods/weapons/wpn_fps_ass_heffy_762_akmsu_pts/wpn_fps_ass_heffy_762_fh_akmsu"}
@@ -764,7 +764,7 @@ end
 -- Barrel Override --
 self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override.wpn_fps_ass_heffy_762_ba_ak109 = {override = {wpn_fps_ass_heffy_762_ro_ak47 = {a_obj="a_ro_ak109_akmsu"}}}
 -- Scope override --
-for i, o_id in ipairs(all_ak47sight) do
+for id, o_id in pairs(all_ak47sight) do
 	if o_id ~= "wpn_fps_upg_o_acog" then
 		self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[o_id] = {a_obj = "a_o_akmsu", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 7, -2.8)}}}
 		self.parts.wpn_fps_ass_heffy_762_lr_m92.override[o_id]   = {a_obj = "a_o_akmsu", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 7, -2.8)}}}
@@ -781,7 +781,7 @@ self.parts.wpn_fps_ass_heffy_762_m_steel_75.weapon_reload_override 	 = {bm_w_hef
 --- Stocks ---
 
 --- Bipods ---
-for i, bp_id in ipairs(all_ak47bipod) do
+for id, bp_id in pairs(all_ak47bipod) do
 	self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[bp_id] = {a_obj = "a_bp_akmsu"}
 	self.parts.wpn_fps_ass_heffy_762_lfg_m70.override[bp_id]  = {a_obj = "a_bp_m70"}
 end
@@ -791,7 +791,7 @@ end
 ----------------------------------------
 --- Gun ---
 self:akpack_check_adds( "wpn", "wpn_fps_ass_heffy_762" )
-for i, o_id in ipairs(all_ak47sight) do
+for id, o_id in pairs(all_ak47sight) do
 	self.wpn_fps_ass_heffy_762.adds[o_id] = {"wpn_fps_upg_o_ak47_scopemount"}
 end
 	
@@ -801,25 +801,25 @@ end
 
 --- Pistol grips ---
 -- AKM grips forbids --
-for i, g_id in ipairs(all_ak47grips) do
+for id, g_id in pairs(all_ak47grips) do
 	if g_id ~= "wpn_fps_ass_heffy_762_pg_ak47" and g_id ~= "wpn_fps_ass_heffy_all_pg_ak74" then
 		self:akpack_setup_forbid( g_id, "wpn_fps_ass_heffy_762_st_vepr" )
 	end
 end
-for i, lfg_id in ipairs(all_ak47lowerforegrip) do
+for id, lfg_id in pairs(all_ak47lowerforegrip) do
 	if lfg_id ~= "wpn_fps_ass_heffy_762_lfg_ak47" then
 		self:akpack_setup_forbid( lfg_id, "wpn_fps_ass_heffy_762_ba_vepr" )
 	end
 end
 --- UFG ---
-for i, ufg_id in ipairs(all_ak47upperforegrip) do
+for id, ufg_id in pairs(all_ak47upperforegrip) do
 	if ufg_id ~= "wpn_fps_ass_heffy_762_ufg_ak47" then
 		self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lfg_m70", ufg_id )
 	end
 end
 
 --- Barrels ---
-for i, ba_id in ipairs(all_ak47barrel) do
+for id, ba_id in pairs(all_ak47barrel) do
 	if ba_id ~= "wpn_fps_ass_heffy_762_ba_rpk" then
 		self:akpack_setup_forbid( ba_id, "wpn_fps_ass_heffy_762_bp_rpk" )
 		self:akpack_setup_forbid( ba_id, "wpn_fps_ass_heffy_762_bp_rpk_folded" )
@@ -828,33 +828,33 @@ end
 self.parts.wpn_fps_ass_heffy_762_bp_rpk.forbids = nil
 self.parts.wpn_fps_ass_heffy_762_bp_rpk_folded.forbids = nil
 
-for i, lfg_id in ipairs(all_ak47lowerforegrip) do
+for id, lfg_id in pairs(all_ak47lowerforegrip) do
 	if lfg_id ~= "wpn_fps_ass_heffy_762_lfg_ak47" then
 		self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_ba_vepr", lfg_id )
 	end
 end
-for i, ufg_id in ipairs(all_ak47upperforegrip) do
+for id, ufg_id in pairs(all_ak47upperforegrip) do
 	if ufg_id ~= "wpn_fps_ass_heffy_762_ufg_ak47" then
 		self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_ba_vepr", ufg_id )
 	end
 end
-for i, lr_id in ipairs(akmsulower) do
+for id, lr_id in pairs(akmsulower) do
 	if lr_id ~= "wpn_fps_ass_heffy_762_lr_ak103" then
 		self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_ba_vepr", lr_id )
 	end
 end
 --- Lower ---
-for i, lr_id in ipairs(akmsulower) do
+for id, lr_id in pairs(akmsulower) do
 	self:akpack_setup_forbid( lr_id, "wpn_fps_ass_heffy_762_st_vepr" )
 end
-for i, lr_id in ipairs(akmsulower) do
+for id, lr_id in pairs(akmsulower) do
 	if lr_id ~= "wpn_fps_ass_heffy_762_lr_ak103" then
-		for i, lfg_id in ipairs(all_ak47lowerforegrip) do
+		for id, lfg_id in pairs(all_ak47lowerforegrip) do
 			if lfg_id ~= "wpn_fps_ass_heffy_762_lfg_ak47" then
 				self:akpack_setup_forbid( lr_id, lfg_id )
 			end
 		end
-		for i, ufg_id in ipairs(all_ak47upperforegrip) do
+		for id, ufg_id in pairs(all_ak47upperforegrip) do
 			if ufg_id ~= "wpn_fps_ass_heffy_762_ufg_ak47" then
 				self:akpack_setup_forbid( lr_id, ufg_id )
 			end
@@ -873,7 +873,7 @@ self.parts.wpn_fps_ass_heffy_762_ro_m92.weapon_stance_override   = {bm_w_heffy_7
 
 --- Vanilla sights ---
 -- non-acoc, default sights --
-for i, o_id in ipairs(nonacog_aksight) do
+for id, o_id in pairs(nonacog_aksight) do
 	self.parts[o_id].stance_mod.wpn_fps_ass_heffy_762 = {translation = Vector3(0, 7, -3.7)}
 end
 -- other sights --
@@ -902,7 +902,7 @@ self.parts.wpn_fps_ass_heffy_762_fh_dummy.pcs = nil
 
 --- Gadget positions ---
 --[[ 
-for i, part_id in ipairs(all_ak47fl) do
+for id, part_id in pairs(all_ak47fl) do
 	self.parts.wpn_fps_ass_heffy_762_flp_<insert_flashlight_position_name>.override[part_id] = {a_obj = "a_fl_ak47"}
 end
 --]]
@@ -959,7 +959,7 @@ local ak104_body_mat = {
 --- AK47 ---
 -- Body --
 local ak47_matconfig = "units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/ak47_body"
-for i, part_id in ipairs(ak47_body_mat) do
+for id, part_id in pairs(ak47_body_mat) do
 	if self.parts[part_id] then
 		self.parts[part_id].material_config 	= Idstring(ak47_matconfig)
 		self.parts[part_id].thq_material_config = Idstring(ak47_matconfig .. "_thq")
@@ -969,7 +969,7 @@ for i, part_id in ipairs(ak47_body_mat) do
 end
 -- Furniture --
 ak47_matconfig = "units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/ak47_furniture"
-for i, part_id in ipairs(ak47_furniture_mat) do
+for id, part_id in pairs(ak47_furniture_mat) do
 	if self.parts[part_id] then
 		self.parts[part_id].material_config 	= Idstring(ak47_matconfig)
 		self.parts[part_id].thq_material_config = Idstring(ak47_matconfig .. "_thq")
@@ -983,7 +983,7 @@ self.parts.wpn_fps_ass_heffy_762_st_ak47.thq_material_config = Idstring("units/m
 --- AK103 ---
 -- Body --
 local ak103_matconfig = "units/mods/weapons/wpn_fps_ass_heffy_762_ak103_pts/ak103_body"
-for i, part_id in ipairs(ak103_body_mat) do
+for id, part_id in pairs(ak103_body_mat) do
 	if self.parts[part_id] then
 		self.parts[part_id].material_config 	= Idstring(ak103_matconfig)
 		self.parts[part_id].thq_material_config = Idstring(ak103_matconfig .. "_thq")
@@ -992,7 +992,7 @@ for i, part_id in ipairs(ak103_body_mat) do
 	end
 end
 ak103_matconfig = "units/mods/weapons/wpn_fps_ass_heffy_762_ak103_pts/ak103_furniture"
-for i, part_id in ipairs(ak103_furniture_mat) do
+for id, part_id in pairs(ak103_furniture_mat) do
 	if self.parts[part_id] then
 		self.parts[part_id].material_config 	= Idstring(ak103_matconfig)
 		self.parts[part_id].thq_material_config = Idstring(ak103_matconfig .. "_thq")
@@ -1003,7 +1003,7 @@ end
 --- AK104 ---
 -- Body --
 local ak104_matconfig = "units/mods/weapons/wpn_fps_ass_heffy_762_ak104_pts/ak104_body"
-for i, part_id in ipairs(ak104_body_mat) do
+for id, part_id in pairs(ak104_body_mat) do
 	if self.parts[part_id] then
 		self.parts[part_id].material_config 	= Idstring(ak104_matconfig)
 		self.parts[part_id].thq_material_config = Idstring(ak104_matconfig .. "_thq")
