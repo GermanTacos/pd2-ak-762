@@ -955,7 +955,7 @@ local ak104_body_mat = {
 --------------------------------------------------------
 ----<A><K><4><7> -Matconfig_Definition- <A><K><4><7>----
 --------------------------------------------------------
-
+--[[
 --- AK47 ---
 -- Body --
 local ak47_matconfig = "units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/ak47_body"
@@ -1010,5 +1010,5 @@ for id, part_id in pairs(ak104_body_mat) do
 	else
 		log("AK47_ERROR: (mat_config)Attempt to index Part ID: '" .. part_id .. "' (a nil value)")	
 	end
-end
+end]]--
 end)
