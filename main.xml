@@ -1263,8 +1263,8 @@
 	
 	
 	<Weapon unlock_level="47">
-		<weapon id="heffy_762" based_on="flint" damage_near="25000" damage_far="40000" use_stance="heffy_762_ads" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="4" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_762">
-			<stats damage="98" spread="16" spread_moving="15" recoil="13" concealment="15" suppression="8"/>
+		<weapon id="heffy_762" based_on="flint" damage_near="25000" damage_far="40000" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="4" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_762">
+			<stats damage="98" spread="24" spread_moving="15" recoil="13" concealment="15" suppression="8"/>
 			<fire_mode_data fire_rate="0.1"/>
 			<AMMO_PICKUP>
 					<value_node value="1.5"/>
@@ -1522,7 +1522,11 @@
 			</uses_parts>
 			
 		</factory>
-		<stance/>
+		<stance>
+			<steelsight>
+				<shoulders translation="-10.247 -4.304 4.95"/>
+			</steelsight>
+		</stance>
 		
 	</Weapon>
 	
@@ -1546,6 +1550,20 @@
 		<sound id="wp_flint_mag_in" path="heffy_762_mag_in.ogg" prefix="concrete"/>
 		<sound id="wp_flint_mag_in" path="heffy_762_mag_in.ogg" prefix="asphalt"/>
 		<sound id="wp_flint_mag_in" path="heffy_762_mag_in.ogg" prefix="dirt"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="grass"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="rb6"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="first"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="stone"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="concrete"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="asphalt"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="dirt"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="grass"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="rb6"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="first"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="stone"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="concrete"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="asphalt"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="dirt"/>
 	</Sounds>
 	
 	<AddFiles directory="assets">
