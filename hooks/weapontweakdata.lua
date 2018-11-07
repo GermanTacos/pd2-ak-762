@@ -13,7 +13,7 @@ if ( self.heffy_762 ) then
 	self.heffy_762.spread.bipod = default_bipod_spread
 	self.heffy_762.bipod_camera_spin_limit = 45
 	self.heffy_762.bipod_camera_pitch_limit = 20
-	self.heffy_762.bipod_weapon_translation = Vector3(-8.5,20,-7.5)
+	self.heffy_762.bipod_weapon_translation = Vector3(-8.5,20,-1.5)
 	self.heffy_762.bipod_deploy_multiplier = 1
 	self.heffy_762.timers.deploy_bipod = 1
 	

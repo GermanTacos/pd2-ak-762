@@ -295,10 +295,10 @@ for i, wpn_id in ipairs(akmodules) do
 		
 		self:cafcw_add_to_parts("sight_rail" , wpn_id, "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds"     , "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
 		
-		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_1p29", "0,6,-2.3")
+		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_1p29", "0,-1,-2.3")
 		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_ekp_1s_03", "0,2.5,-2.3")
-		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_pso1_rifle", "0,6,-2.3")
-		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_1pn93", "0,6,-2.3")
+		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_pso1_rifle", "0,-1,-2.3")
+		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_1pn93", "0,-1,-2.3")
        
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_lr"        )
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_ftp"  )
