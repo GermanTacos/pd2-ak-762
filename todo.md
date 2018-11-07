@@ -19,3 +19,4 @@
 - [x] Fix receiver textures (M92, RPK, Tabuk)
 - [x] Fix AKMSU receiver exploding barrel extensions
 - [x] Add "no stock" attachment icon
+- [ ] Update CAFCW with the file inside the hooks dir once we move to 1.1
