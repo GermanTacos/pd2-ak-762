@@ -20,3 +20,4 @@
 - [x] Fix AKMSU receiver exploding barrel extensions
 - [x] Add "no stock" attachment icon
 - [ ] Update CAFCW with the file inside the hooks dir once we move to 1.1
+- [ ] Test methods to get rid of fire selector options
