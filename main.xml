@@ -2432,7 +2432,6 @@
 		
 		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_amd63_pts/amd63_stock"/>
 		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_amd63_pts/amd63_stock_thq"/>
-		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_amd63_pts/amd63_stock_wood"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_amd63_pts/wpn_fps_ass_heffy_762_ba_amd63"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_amd63_pts/wpn_fps_ass_heffy_762_ba_amd63"/>
@@ -2783,16 +2782,6 @@
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_steel_75"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_steel_75"/>
 		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_steel_75_thq"/>
-		
-		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/proto_30_df"/>
-		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/proto_30_nm"/>
-		
-		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_proto_30"/>
-		<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_proto_30"/>
-		<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_proto_30"/>
-		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_proto_30"/>
-		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_proto_30"/>
-		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_proto_30_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_bake_30"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_bake_30"/>
