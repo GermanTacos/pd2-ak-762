@@ -165,8 +165,6 @@ local akmstock = {
 	"wpn_fps_ass_heffy_762_st_akm_worn",
 	"wpn_fps_ass_heffy_762_st_akms",
 	"wpn_fps_ass_heffy_762_st_rpk",
-	"wpn_fps_ass_heffy_762_str_rpk",
-	"wpn_fps_ass_heffy_762_stp_rpk",
 	"wpn_fps_ass_heffy_762_st_ak103",
 	"wpn_fps_ass_heffy_762_st_bl_t56",
 	"wpn_fps_ass_heffy_762_st_br_t56",
@@ -185,7 +183,9 @@ local akmstockpad = {
 	"wpn_fps_ass_heffy_762_sp_akm",
 	"wpn_fps_ass_heffy_762_sp_tabuk",
 	"wpn_fps_ass_heffy_762_stp_mpi",
-	"wpn_fps_ass_heffy_762_sp_amd63"
+	"wpn_fps_ass_heffy_762_sp_amd63",
+	"wpn_fps_ass_heffy_762_str_rpk",
+	"wpn_fps_ass_heffy_762_stp_rpk"
 }
 --- Fore Grip ---
 -- Default length --
