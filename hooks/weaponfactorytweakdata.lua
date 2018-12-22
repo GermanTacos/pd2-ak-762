@@ -165,6 +165,8 @@ local akmstock = {
 	"wpn_fps_ass_heffy_762_st_akm_worn",
 	"wpn_fps_ass_heffy_762_st_akms",
 	"wpn_fps_ass_heffy_762_st_rpk",
+	"wpn_fps_ass_heffy_762_str_rpk",
+	"wpn_fps_ass_heffy_762_stp_rpk",
 	"wpn_fps_ass_heffy_762_st_ak103",
 	"wpn_fps_ass_heffy_762_st_bl_t56",
 	"wpn_fps_ass_heffy_762_st_br_t56",
@@ -449,7 +451,12 @@ if self.wpn_fps_ass_heffy_545 then
 	self.parts.wpn_fps_ass_heffy_762_st_vepr.override.wpn_fps_ass_heffy_all_pg_ak74 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"}
 	self.parts.wpn_fps_ass_heffy_762_st_vepr.override.wpn_fps_ass_heffy_545_pg_ak74 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"}
 end
-
+if self.wpn_fps_ass_heffy_556 then
+	self.parts.wpn_fps_ass_heffy_762_st_vepr.override.wpn_fps_ass_heffy_556_pg_ak101 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"}
+end
+if self.wpn_fps_sho_heffy_12g then
+	self.parts.wpn_fps_ass_heffy_762_st_vepr.override.wpn_fps_sho_heffy_12g_pg_saiga12 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"}
+end
 -----------------------------------------
 ----<A><K><4><7> -CAFCW- <A><K><4><7>----
 -----------------------------------------

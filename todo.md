@@ -21,3 +21,4 @@
 - [x] Add "no stock" attachment icon
 - [ ] Update CAFCW with the file inside the hooks dir once we move to 1.1
 - [ ] Test methods to get rid of fire selector options
+- [ ] Fix the stock ring to the RPK stock model because why the fuck are they even separate?
