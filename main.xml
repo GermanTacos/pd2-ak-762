@@ -1116,27 +1116,32 @@
 	<WeaponMod id="wpn_fps_ass_heffy_762_m_steel_30" based_on="wpn_fps_ass_flint_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_steel_30" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_762_m_steel_5" based_on="wpn_fps_ass_flint_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_steel_5" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
-		<stats extra_ammo_new="-25" concealment="5" reload="2"/>
+		<stats concealment="5" reload="2"/>
+		<override_weapon CLIP_AMMO_MAX="5"/>
 		<pcs/>
 	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_762_m_steel_10" based_on="wpn_fps_ass_flint_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_steel_10" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
-		<stats extra_ammo="-10" concealment="4" reload="1"/>
+		<stats concealment="4" reload="1"/>
+		<override_weapon CLIP_AMMO_MAX="10"/>
 		<pcs/>
 	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_762_m_steel_20" based_on="wpn_fps_ass_flint_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_steel_20" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
-		<stats extra_ammo="-5" concealment="3"/>
+		<stats concealment="3"/>
+		<override_weapon CLIP_AMMO_MAX="20"/>
 		<pcs/>
 	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_762_m_steel_40" based_on="wpn_fps_ass_flint_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_steel_40" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
-		<stats extra_ammo="5" concealment="-3"/>
+		<stats concealment="-3"/>
+		<override_weapon CLIP_AMMO_MAX="40"/>
 		<pcs/>
 	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_762_m_steel_75" based_on="wpn_lmg_rpk_m_drum" type="magazine" a_obj="a_m_ak47_drum75" unit="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_steel_75" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
-		<stats extra_ammo_new="45" reload="-2" recoil="1" concealment="-6"/>
+		<stats reload="-2" recoil="1" concealment="-6"/>
+		<override_weapon CLIP_AMMO_MAX="75"/>
 		<pcs/>
 	</WeaponMod>
 	
@@ -1146,7 +1151,8 @@
 	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_762_m_bake_10" based_on="wpn_fps_ass_flint_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_ass_heffy_762_mag_pts/wpn_fps_ass_heffy_762_m_bake_10" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
-		<stats extra_ammo="-10" concealment="3" reload="1"/>
+		<stats concealment="3" reload="1"/>
+		<override_weapon CLIP_AMMO_MAX="10"/>
 		<pcs/>
 	</WeaponMod>
 	
