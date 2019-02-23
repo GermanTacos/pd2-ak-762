@@ -116,6 +116,36 @@
 	<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/wpn_fps_ass_heffy_762_tr_ak47"/>
 	<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/wpn_fps_ass_heffy_762_tr_ak47"/>
 	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_ak47_pts/wpn_fps_ass_heffy_762_tr_ak47_thq"/>
+	
+	<!-- TYPE II PTS -->
+	
+	<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/t2_body_df"/>
+	
+	<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/t2_furniture_df"/>
+	<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/t2_furniture_nm"/>
+	
+	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/t2_furniture"/>
+	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/t2_furniture_thq"/>
+	
+	<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_lr_t2"/>
+	<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_lr_t2"/>
+	<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_lr_t2"/>
+	<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_lr_t2"/>
+	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_lr_t2"/>
+	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_lr_t2_thq"/>
+	
+<!--<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_fe_t2"/>
+	<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_fe_t2"/>
+	<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_fe_t2"/>
+	<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_fe_t2"/>
+	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_fe_t2"/>
+	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_fe_t2_thq"/>-->
+	
+	<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_pg_t2"/>
+	<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_pg_t2"/>
+	<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_pg_t2"/>
+	<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_pg_t2"/>
+	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_t2_pts/wpn_fps_ass_heffy_762_pg_t2_thq"/>
 
 	<!-- AKM PTS -->
 

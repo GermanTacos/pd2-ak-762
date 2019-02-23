@@ -39,8 +39,11 @@
 	
 	"bm_wp_wpn_fps_ass_heffy_all_ufg_ak47" : "AK-47 Upper Handguard",
 	"bm_wp_wpn_fps_ass_heffy_all_lfg_ak47" : "AK-47 Lower Handguard",
-	"bm_wp_wpn_fps_ass_heffy_all_st_ak47" : "AK-47 Stock",
-	"bm_wp_wpn_fps_ass_heffy_all_pg_ak47" : "AK-47 Grip",
+	"bm_wp_wpn_fps_ass_heffy_all_st_ak47"  : "AK-47 Stock",
+	"bm_wp_wpn_fps_ass_heffy_all_pg_ak47"  : "AK-47 Grip",
+	
+	"bm_wp_wpn_fps_ass_heffy_762_lr_t2"    : "Type II AK Receiver",
+	"bm_wp_wpn_fps_ass_heffy_762_pg_t2"    : "Type II AK Grip",
 	
 	"bm_wp_wpn_fps_ass_heffy_762_ba_akm" : "AKM Barrel",
 	"bm_wp_wpn_fps_ass_heffy_762_fh_akm" : "AKM Muzzle Brake",
