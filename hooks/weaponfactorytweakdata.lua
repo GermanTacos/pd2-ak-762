@@ -369,10 +369,8 @@ local all_ak47bipod = {
 
 self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_762" )
 
---This message in the 'crashing because i modded my gun too much' AK Pack goes out as
---a special 'Fuck You' to EvilBoberino, a pathetic asshole who throws fits because someone
---dares to make a joke about a project they were involved with, despite first directly
---insulting the good work of this pack. Good job, asshole.					-GermanTacos 
+--Fuck EvilBoberino
+--     -GermanTacos 
 
 --- Compatibility Array Insertion ---
 
