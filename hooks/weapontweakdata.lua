@@ -494,11 +494,23 @@ self:SetupAttachmentPoint("heffy_762", {
         position = Vector3( 0, 0.35, 0.275 ), 
         rotation = Rotation( 0, 2.5, 0 ) 
 	})
-	self:SetupAttachmentPoint("heffy_545", {
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_s_v_ak47", 
+        base_a_obj = "a_s", 
+        position = Vector3( 0, 0, 0.5 ), 
+        rotation = Rotation( 0, 7, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
 		name = "a_s", 
         base_a_obj = "a_s", 
         position = Vector3( 0, 0, 1 ), 
         rotation = Rotation( 0, -2, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_762", {
+		name = "a_s_v_akmsu", 
+        base_a_obj = "a_s", 
+        position = Vector3( 0, 0, 1 ), 
+        rotation = Rotation( 0, 2, 0 ) 
 	})
 --- Pistol Grips ---
 	self:SetupAttachmentPoint("heffy_762", {
