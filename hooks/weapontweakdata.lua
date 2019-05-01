@@ -2,6 +2,9 @@ Hooks:PostHook( WeaponTweakData, "init", "AK47ModInit", function(self)
 
 if ( self.heffy_762 ) then
 
+--- TBC ---
+
+
 ---- Bipod Stuff ----
 	self.heffy_762.animations.bipod_enter = "bipod_enter"
 	self.heffy_762.animations.bipod_exit = "bipod_exit"
