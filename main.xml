@@ -24,7 +24,19 @@
 	
 	<WeaponMod id="wpn_fps_ass_heffy_762_gb_ak47" based_on="wpn_fps_ass_flint_body_upperreceiver" type="gas_block" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
 	
-	<WeaponMod id="wpn_fps_ass_heffy_762_int1_ak47" based_on="wpn_fps_ass_flint_body_upperreceiver" type="internal1" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	<!-- Stance attachment -->
+	<WeaponMod id="wpn_fps_ass_heffy_762_int1_ak47" based_on="wpn_fps_ass_flint_body_upperreceiver" type="sight" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
+		<stance_mod>
+			<wpn_fps_ass_heffy_762 rotation="0.000436332 0 0 -1" translation="0 -5 1.15"/>
+		</stance_mod>
+		<override>
+			<wpn_fps_ass_heffy_all_sm_cover>
+				<stance_mod>
+					<wpn_fps_ass_heffy_762 rotation="0 0 0 -1" translation="0 0 0"/>
+				</stance_mod>
+			</wpn_fps_ass_heffy_all_sm_cover>
+		</override>
+	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_762_int2_ak47" based_on="wpn_fps_ass_flint_body_upperreceiver" type="internal2" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
 	
@@ -312,6 +324,11 @@
 			<wpn_fps_ass_heffy_762_st_ak47 		a_obj="a_s_akmsu_ak47" /> 
 			<wpn_fps_upg_o_ak47_scopemount  	unit="units/mods/weapons/wpn_fps_ass_heffy_762_shared_pts/wpn_fps_upg_o_ak47_c_scopemount"  />
 			<wpn_fps_upg_o_ak47_l_scopemount 	unit="units/mods/weapons/wpn_fps_ass_heffy_762_shared_pts/wpn_fps_upg_o_ak47_lc_scopemount"  />
+			<wpn_fps_ass_heffy_762_int1_ak47>
+				<stance_mod>
+					<wpn_fps_ass_heffy_762 rotation="-0.00567229 -0 0 -0.999984" translation="0 -5 0.1"/>
+				</stance_mod>
+			</wpn_fps_ass_heffy_762_int1_ak47>
 		</override>
 		<pcs/>
 	</WeaponMod>
@@ -1016,6 +1033,11 @@
 			<wpn_fps_ass_heffy_762_st_akmsu 	a_obj = "a_s_akm_akmsu" />
 			<wpn_fps_upg_o_ak47_scopemount   unit="units/mods/weapons/wpn_fps_ass_heffy_762_shared_pts/wpn_fps_upg_o_ak47_c_scopemount"  />
 			<wpn_fps_upg_o_ak47_l_scopemount unit="units/mods/weapons/wpn_fps_ass_heffy_762_shared_pts/wpn_fps_upg_o_ak47_lc_scopemount"  />
+			<wpn_fps_ass_heffy_762_int1_ak47>
+				<stance_mod>
+					<wpn_fps_ass_heffy_762 rotation="-0.00567229 -0 0 -0.999984" translation="0 -5 0.1"/>
+				</stance_mod>
+			</wpn_fps_ass_heffy_762_int1_ak47>
 		</override>
 		<pcs/>
 	</WeaponMod>
@@ -1064,6 +1086,11 @@
 		<override>
 			<wpn_fps_upg_o_ak47_scopemount   unit="units/mods/weapons/wpn_fps_ass_heffy_762_shared_pts/wpn_fps_upg_o_ak47_c_scopemount"  />
 			<wpn_fps_upg_o_ak47_l_scopemount unit="units/mods/weapons/wpn_fps_ass_heffy_762_shared_pts/wpn_fps_upg_o_ak47_lc_scopemount"  />
+			<wpn_fps_ass_heffy_762_int1_ak47>
+				<stance_mod>
+					<wpn_fps_ass_heffy_762 rotation="-0.00567229 -0 0 -0.999984" translation="0 -5 0.1"/>
+				</stance_mod>
+			</wpn_fps_ass_heffy_762_int1_ak47>
 		</override>
 		<pcs/>
 	</WeaponMod>
@@ -1606,7 +1633,7 @@
 		</factory>
 		<stance>
 			<steelsight>
-				<shoulders translation="-10.247 -4.304 4.95"/>
+				<shoulders rotation="-0.000436332 -1.90386e-007 -0.000436332 -1" translation="-10.247 0.696 3.77"/>
 			</steelsight>
 		</stance>
 		
