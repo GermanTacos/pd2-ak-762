@@ -504,6 +504,13 @@
 	<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/wpn_fps_ass_heffy_762_str_rpk"/>
 	<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/wpn_fps_ass_heffy_762_str_rpk"/>
 	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/wpn_fps_ass_heffy_762_str_rpk_thq"/>
+	
+	<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/wpn_fps_ass_heffy_762_ro_rpk"/>
+	<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/wpn_fps_ass_heffy_762_ro_rpk"/>
+	<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/wpn_fps_ass_heffy_762_ro_rpk"/>
+	<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/wpn_fps_ass_heffy_762_ro_rpk"/>
+	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_rpk_pts/wpn_fps_ass_heffy_762_ro_rpk_thq"/>
+	
 	<!-- AK 103 PTS -->
 	
 	<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_ak103_pts/ak103_body_df"/>
