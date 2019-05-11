@@ -876,13 +876,7 @@ end
 ----<A><K><4><7> -Stance- <A><K><4><7>----
 ------------------------------------------
 
---- Stance overrides by barrels ---
---self.parts.wpn_fps_ass_heffy_762_lr_akmsu.weapon_stance_override = {bm_w_heffy_762 = "akmsu_ads"}
---self.parts.wpn_fps_ass_heffy_762_lr_m92.weapon_stance_override   = {bm_w_heffy_762 = "akmsu_ads"}
---self.parts.wpn_fps_ass_heffy_762_ro_m92.weapon_stance_override   = {bm_w_heffy_762 = "akmsu_ads"}
-
 --- Vanilla sights ---
--- non-acoc, default sights --
 for id, o_id in pairs(all_ak47sight) do
 	if self.parts[o_id].stance_mod.wpn_fps_ass_flint then
 		self.parts[o_id].stance_mod.wpn_fps_ass_heffy_762 = deep_clone(self.parts[o_id].stance_mod.wpn_fps_ass_flint)
@@ -890,12 +884,6 @@ for id, o_id in pairs(all_ak47sight) do
 		log("[AK_Pack] [ERROR] WHO THE FUCK MESSED WITH SIGHT STANCES THIS TIME!? " .. o_id)
 	end
 end
--- other sights --
---self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_heffy_762 			   = {translation = Vector3(0, 5, -3.7)}
---self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_heffy_762 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_flint)
---self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_heffy_762 = deep_clone(self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_flint)
---self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_heffy_762 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_flint)
-
 -----------------------------------------------
 ----<A><K><4><7> -Underbarrel- <A><K><4><7>----
 -----------------------------------------------
