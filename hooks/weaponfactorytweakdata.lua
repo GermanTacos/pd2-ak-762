@@ -369,7 +369,8 @@ local all_ak47bipod = {
 
 self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_762" )
 
---https://i.imgur.com/YUjAAWR.png
+--Fuck EvilBoberino
+--     -GermanTacos 
 
 --- Compatibility Array Insertion ---
 
@@ -429,21 +430,6 @@ if self.wpn_fps_ass_heffy_545 then
 	for id, part_id in pairs(ak74ufg) do
 		table.insert(all_ak47upperforegrip, part_id)
 	end
-
-	local all_ak74parts = {
-		"wpn_fps_ass_heffy_all_lfg_ak74",
-		"wpn_fps_ass_heffy_all_ufg_ak74",
-		"wpn_fps_ass_heffy_all_pg_ak74",
-		"wpn_fps_ass_heffy_all_st_ak74",
-		"wpn_fps_ass_heffy_545_lfg_rpk74",
-		"wpn_fps_ass_heffy_545_ufg_rpk74",
-		"wpn_fps_ass_heffy_545_st_rpk74",
-		"wpn_fps_ass_heffy_545_lfg_mpi",
-		"wpn_fps_ass_heffy_545_ufg_mpi",
-		"wpn_fps_ass_heffy_545_pg_mpi",
-		"wpn_fps_ass_heffy_545_st_mpi",
-		"wpn_fps_ass_heffy_545_ufg_tantal",
-	}
 	
     for id, part_id in pairs(all_ak74parts) do
 		if self.parts[part_id].pcs then
