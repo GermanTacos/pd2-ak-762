@@ -357,6 +357,62 @@ all_ak47bipod = {
 	"wpn_fps_ass_heffy_762_bp_rpk_folded"
 }
 
+
+---- ARRAYS FOR OTHER MODULES -----
+
+heffy762stocks = {
+	"wpn_fps_ass_heffy_all_st_ak47",
+	"wpn_fps_ass_heffy_762_st_akm",
+	"wpn_fps_ass_heffy_762_st_akm_worn",
+	"wpn_fps_ass_heffy_762_st_akms",
+	"wpn_fps_ass_heffy_762_st_akmsu",
+	"wpn_fps_ass_heffy_762_st_rpk",
+	"wpn_fps_ass_heffy_762_st_ak103",
+	"wpn_fps_ass_heffy_762_st_vepr",
+	"wpn_fps_ass_heffy_762_st_bl_t56",
+	"wpn_fps_ass_heffy_762_st_br_t56",
+	"wpn_fps_ass_heffy_762_st_mpi",
+	"wpn_fps_ass_heffy_762_st_2_mpi",
+	"wpn_fps_ass_heffy_762_st_amd63",
+	"wpn_fps_ass_heffy_762_st_amd65",
+	"wpn_fps_ass_heffy_762_st_m70",
+	"wpn_fps_ass_heffy_762_st_tabuk",
+	"wpn_fps_ass_heffy_762_st_rk62",
+}
+	
+heffy762stockparts = {
+	"wpn_fps_ass_heffy_762_sp_ak47",
+	"wpn_fps_ass_heffy_762_sp_mpi",
+	"wpn_fps_ass_heffy_762_sp_2_mpi",
+	"wpn_fps_ass_heffy_762_sp_akm",
+	"wpn_fps_ass_heffy_762_sp_tabuk",
+	"wpn_fps_ass_heffy_762_stp_mpi",
+	"wpn_fps_ass_heffy_762_sp_amd63",
+}
+heffy762fgs = { --original by 545
+		"wpn_fps_ass_heffy_all_lfg_ak47",
+		"wpn_fps_ass_heffy_all_ufg_ak47",
+		"wpn_fps_ass_heffy_762_lfg_akm",
+		"wpn_fps_ass_heffy_762_ufg_akm",
+		"wpn_fps_ass_heffy_762_lfg_akm_worn",
+		"wpn_fps_ass_heffy_762_ufg_akm_worn",
+		"wpn_fps_ass_heffy_762_lfg_rpk",
+		"wpn_fps_ass_heffy_762_ufg_rpk",
+		"wpn_fps_ass_heffy_762_lfg_bl_t56",
+		"wpn_fps_ass_heffy_762_ufg_bl_t56",
+		"wpn_fps_ass_heffy_762_lfg_br_t56",
+		"wpn_fps_ass_heffy_762_ufg_br_t56",
+		"wpn_fps_ass_heffy_762_lfg_mpi",
+		"wpn_fps_ass_heffy_762_ufg_mpi",
+		"wpn_fps_ass_heffy_762_lfg_mpi_wood",
+		"wpn_fps_ass_heffy_762_ufg_mpi_wood",
+		"wpn_fps_ass_heffy_762_lfg_amd63"
+	}
+
+
+
+
+
 self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_762" )
 
 --Fuck EvilBoberino
@@ -396,7 +452,6 @@ if self.wpn_fps_ass_heffy_545 then
 	
 	for id, part_id in pairs(ak74grips) do
 		table.insert(all_ak47grips, part_id)
-		table.insert(akmgrips, part_id)
 	end
 
 	local ak74lfg = {
