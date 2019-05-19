@@ -415,8 +415,7 @@ heffy762fgs = { --original by 545
 
 self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_762" )
 
---Fuck EvilBoberino
---     -GermanTacos 
+--https://i.imgur.com/YUjAAWR.png
 
 --- Compatibility Array Insertion ---
 
