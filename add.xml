@@ -718,6 +718,18 @@
 	<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_lfg_md90"/>
 	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_md90_pts/wpn_fps_ass_heffy_762_lfg_md90_thq"/>
 	
+	<!-- WASR PTS -->
+	
+	<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_wasr_pts/wasr_body_df"/>
+	<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_wasr_pts/wasr_body_nm"/>
+	
+	<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762_wasr_pts/wpn_fps_ass_heffy_762_lr_wasr"/>
+	<model           path="units/mods/weapons/wpn_fps_ass_heffy_762_wasr_pts/wpn_fps_ass_heffy_762_lr_wasr"/>
+	<object          path="units/mods/weapons/wpn_fps_ass_heffy_762_wasr_pts/wpn_fps_ass_heffy_762_lr_wasr"/>
+	<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762_wasr_pts/wpn_fps_ass_heffy_762_lr_wasr"/>
+	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_wasr_pts/wpn_fps_ass_heffy_762_lr_wasr"/>
+	<material_config path="units/mods/weapons/wpn_fps_ass_heffy_762_wasr_pts/wpn_fps_ass_heffy_762_lr_wasr_thq"/>
+	
 	<!-- TYPE 56-II PTS -->
 	
 	<texture         path="units/mods/weapons/wpn_fps_ass_heffy_762_t56_pts/t56_body_df"/>
