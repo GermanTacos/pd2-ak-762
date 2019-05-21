@@ -1330,6 +1330,13 @@
 	
 	<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762/wpn_fps_ass_heffy_762_npc"/>
 	
+	<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_762/wpn_fps_ass_heffy_762_akmsu"/>
+	<model           path="units/mods/weapons/wpn_fps_ass_heffy_762/wpn_fps_ass_heffy_762_akmsu"/>
+	<object          path="units/mods/weapons/wpn_fps_ass_heffy_762/wpn_fps_ass_heffy_762_akmsu"/>
+	<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762/wpn_fps_ass_heffy_762_akmsu"/>
+	
+	<unit            path="units/mods/weapons/wpn_fps_ass_heffy_762/wpn_fps_ass_heffy_762_akmsu_npc"/>
+	
 	<!-- ICONS -->
 	
 	<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/heffy_762"/>

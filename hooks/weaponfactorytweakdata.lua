@@ -897,6 +897,15 @@ self.parts.wpn_fps_ass_heffy_762_fh_dummy.pcs = nil
 
 ---- Override ----
 
+--cursed
+--[[self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override_weapon = {
+	unit		   = "units/mods/weapons/wpn_fps_ass_heffy_762/wpn_fps_ass_heffy_762_akmsu",
+	object		   = "units/mods/weapons/wpn_fps_ass_heffy_762/wpn_fps_ass_heffy_762_akmsu",
+	model		   = "units/mods/weapons/wpn_fps_ass_heffy_762/wpn_fps_ass_heffy_762_akmsu",
+	cooked_physics = "units/mods/weapons/wpn_fps_ass_heffy_762/wpn_fps_ass_heffy_762_akmsu",
+	based_on = "akmsu"
+}
+self.parts.wpn_fps_ass_heffy_762_lr_akmsu.weapon_reload_override = {bm_w_heffy_762 = "akmsu"}]]--
 
 --- Gadget positions ---
 --[[ 
