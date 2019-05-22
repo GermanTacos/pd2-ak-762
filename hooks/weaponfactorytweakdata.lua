@@ -327,6 +327,23 @@ local all_ak47sight = {
 	"wpn_fps_upg_o_spot"
 }
 
+local vanilla_ak47sight = {
+	"wpn_fps_upg_o_specter",
+	"wpn_fps_upg_o_aimpoint",
+	"wpn_fps_upg_o_aimpoint_2",
+	"wpn_fps_upg_o_docter",
+	"wpn_fps_upg_o_eotech",
+	"wpn_fps_upg_o_t1micro",
+	"wpn_fps_upg_o_cmore",
+	"wpn_fps_upg_o_acog",
+	"wpn_fps_upg_o_cs",
+	"wpn_fps_upg_o_eotech_xps",
+	"wpn_fps_upg_o_reflex",
+	"wpn_fps_upg_o_rx01",
+	"wpn_fps_upg_o_rx30",
+	"wpn_fps_upg_o_spot"
+}
+
 --- Grips ---
 all_ak47grips = {
 	"wpn_fps_ass_heffy_762_pg_ak47",
@@ -410,7 +427,39 @@ heffy762fgs = { --original by 545
 	}
 
 
-
+--- CAFCW aka better later then never also holy shit this actually works ---
+if attach_tables then
+	for _, md_id in pairs(attach_tables.Barrel_Extensions) do
+		if self.parts[md_id] then
+			table.insert(all_ak47ext, md_id)
+		end
+	end
+	for _, md_id in pairs(attach_tables.Suppressors) do
+		if self.parts[md_id] then
+			table.insert(all_ak47ext, md_id)
+		end
+	end
+	for _, fl_id in pairs(attach_tables.Gadgets) do
+		if self.parts[fl_id] then
+			table.insert(all_ak47fl, fl_id)
+		end
+	end
+	for _, o_id in pairs(attach_tables.ACOG) do
+		if self.parts[o_id] then
+			table.insert(all_ak47sight, o_id)
+		end
+	end
+	for _, o_id in pairs(attach_tables.Custom) do
+		if self.parts[o_id] then
+			table.insert(all_ak47sight, o_id)
+		end
+	end
+	for _, o_id in pairs(attach_tables.Specter) do
+		if self.parts[o_id] then
+			table.insert(all_ak47sight, o_id)
+		end
+	end
+end
 
 
 self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_762" )
@@ -487,22 +536,6 @@ end
 -----------------------------------------
 ----<A><K><4><7> -CAFCW- <A><K><4><7>----
 -----------------------------------------
-if BeardLib.Utils:FindMod("gsup") then
-	local AK47SneakySuppressorPack = {
-		"wpn_fps_ass_ns_g_sup3",
-		"wpn_fps_ass_ns_g_sup4",
-		"wpn_fps_ass_ns_g_sup5"
-	}
-	for id, part_id in pairs(AK47SneakySuppressorPack) do
-		table.insert(self.wpn_fps_ass_heffy_762.uses_parts, part_id)
-		table.insert(all_ak47ext, part_id)
-	end
-end
-
-if BeardLib.Utils:FindMod("Tromix Barrel-Ext") then
-	table.insert(self.wpn_fps_ass_heffy_762.uses_parts, "wpn_fps_upg_ns_ass_smg_tromix")	
-	table.insert(all_ak47ext, "wpn_fps_upg_ns_ass_smg_tromix")
-end
 
 if BeardLib.Utils:FindMod("M82 Muzzle Brake") then
 	table.insert(all_ak47ext, "wpn_fps_upg_ns_m82")
@@ -569,7 +602,6 @@ for id, fo_id in pairs(all_ak47fo) do
 	self.parts.wpn_fps_ass_heffy_762_ba_rk62.override[fo_id]  = {a_obj = "a_fo_rk62"}
 	self.parts.wpn_fps_ass_heffy_762_ba_rpk.override[fo_id]   = {a_obj = "a_fo_rpk"}
 	self.parts.wpn_fps_ass_heffy_762_ba_tabuk.override[fo_id] = {a_obj = "a_fo_tabuk"}
---	self.parts.wpn_fps_ass_heffy_762_ba_vepr.override[fo_id]  = {a_obj = "a_fo_vepr"}
 	self.parts.wpn_fps_ass_heffy_762_ba_amd65.override[fo_id] = {a_obj = "a_fo_amd65"}
 	self.parts.wpn_fps_ass_heffy_762_ba_md90.override[fo_id]  = {a_obj = "a_fo_md90"}
 end
@@ -676,10 +708,6 @@ for id, lr_id in pairs(all_ak47lower) do
 		self.parts[lr_id].override[st_id].override = self.parts[lr_id].override[st_id].override or {}
 	end
 end
---for id, lr_id in pairs(all_ak47lower) do
---	self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_ak47 = self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_ak47 or {}
---	self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_ak47.override = self.parts[lr_id].override.wpn_fps_ass_heffy_762_st_ak47.override or {}
---end
 for id, st_id in pairs(akmstock) do
 	for id, sp_id in pairs(akmstockpad) do
 		self.parts.wpn_fps_ass_heffy_762_lr_ak47.override[st_id].override[sp_id]  = {a_obj = "a_s_ak47"}
@@ -797,7 +825,7 @@ end
 ----------------------------------------
 --- Gun ---
 self:akpack_check_adds( "wpn", "wpn_fps_ass_heffy_762" )
-for id, o_id in pairs(all_ak47sight) do
+for id, o_id in pairs(vanilla_ak47sight) do
 	self.wpn_fps_ass_heffy_762.adds[o_id] = {"wpn_fps_upg_o_ak47_scopemount"}
 end
 	
@@ -873,7 +901,7 @@ end
 ------------------------------------------
 
 --- Vanilla sights ---
-for id, o_id in pairs(all_ak47sight) do
+for id, o_id in pairs(vanilla_ak47sight) do
 	if self.parts[o_id].stance_mod.wpn_fps_ass_flint then
 		self.parts[o_id].stance_mod.wpn_fps_ass_heffy_762 = deep_clone(self.parts[o_id].stance_mod.wpn_fps_ass_flint)
 	else
