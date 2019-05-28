@@ -549,6 +549,10 @@ if BeardLib.Utils:FindMod("M82 Muzzle Brake") then
 	table.insert(all_ak47ext, "wpn_fps_upg_ns_aw50")
 end
 
+if self.parts.wpn_fps_upg_o_thersig then
+	table.insert(all_ak47sight, "wpn_fps_upg_o_thersig")
+	table.insert(vanilla_ak47sight, "wpn_fps_upg_o_thersig")
+end
 
 --------------------------------------------
 ----<A><K><4><7> -Override- <A><K><4><7>----
