@@ -1467,5 +1467,8 @@
 	<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_762_ufg_mpi_wood"/>
 	<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_762_lr_wasr"/>
 	<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_762_ro_rpk"/>
+	<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_762_lfg_md90"/>
+	<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_762_vg_amd63"/>
+	<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_762_vg_amd65"/>
 
 </AddFiles>

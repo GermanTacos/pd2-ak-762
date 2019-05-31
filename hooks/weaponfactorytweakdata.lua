@@ -206,7 +206,8 @@ all_ak47lowerforegrip = {
 	"wpn_fps_ass_heffy_762_lfg_amd63",
 	"wpn_fps_ass_heffy_762_lfg_m70",
 	"wpn_fps_ass_heffy_762_lfg_m92",
-	"wpn_fps_ass_heffy_762_lfg_none"
+	"wpn_fps_ass_heffy_762_lfg_none",
+	"wpn_fps_ass_heffy_762_lfg_md90"
 }
 ak47foregrip = {
 	"wpn_fps_ass_heffy_762_lfg_ak47",
