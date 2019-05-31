@@ -35,6 +35,11 @@
 					<wpn_fps_ass_heffy_762 rotation="0 0 0 -1" translation="0 0 0"/>
 				</stance_mod>
 			</wpn_fps_ass_heffy_all_sm_cover>
+			<wpn_fps_ass_heffy_all_ur_alpha>
+				<stance_mod>
+					<wpn_fps_ass_heffy_762 rotation="0 0 0 -1" translation="0 0 0"/>
+				</stance_mod>
+			</wpn_fps_ass_heffy_all_ur_alpha>
 		</override>
 	</WeaponMod>
 	
