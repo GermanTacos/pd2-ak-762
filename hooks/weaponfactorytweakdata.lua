@@ -126,12 +126,14 @@ all_ak47lower = {
 	"wpn_fps_ass_heffy_762_lr_ak103",
 	"wpn_fps_ass_heffy_762_lr_ak47",
 	"wpn_fps_ass_heffy_762_lr_akmsu",
-	"wpn_fps_ass_heffy_762_lr_m92"
+	"wpn_fps_ass_heffy_762_lr_m92",
+	"wpn_fps_ass_heffy_762_lr_wasr"
 }
 akmlower = {
 	"wpn_fps_ass_heffy_762_lr_akm",
 	"wpn_fps_ass_heffy_762_lr_rpk",
-	"wpn_fps_ass_heffy_762_lr_vepr"
+	"wpn_fps_ass_heffy_762_lr_vepr",
+	"wpn_fps_ass_heffy_762_lr_wasr"
 }
 akmsulower = {
 	"wpn_fps_ass_heffy_762_lr_ak103",
