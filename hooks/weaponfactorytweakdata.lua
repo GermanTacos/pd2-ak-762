@@ -207,7 +207,8 @@ all_ak47lowerforegrip = {
 	"wpn_fps_ass_heffy_762_lfg_m70",
 	"wpn_fps_ass_heffy_762_lfg_m92",
 	"wpn_fps_ass_heffy_762_lfg_none",
-	"wpn_fps_ass_heffy_762_lfg_md90"
+	"wpn_fps_ass_heffy_762_lfg_md90",
+	"wpn_fps_ass_heffy_all_lfg_ak47"
 }
 ak47foregrip = {
 	"wpn_fps_ass_heffy_762_lfg_ak47",
@@ -235,7 +236,8 @@ all_ak47upperforegrip = {
 	"wpn_fps_ass_heffy_762_ufg_mpi_wood",
 	"wpn_fps_ass_heffy_762_ufg_m70",
 	"wpn_fps_ass_heffy_762_ufg_m92",
-	"wpn_fps_ass_heffy_762_ufg_none"
+	"wpn_fps_ass_heffy_762_ufg_none",
+	"wpn_fps_ass_heffy_all_ufg_ak47"
 }
 --- Barrel ---
 -- Default length --
@@ -358,7 +360,8 @@ all_ak47grips = {
 	"wpn_fps_ass_heffy_762_pg_amd63",
 	"wpn_fps_ass_heffy_762_pg_amd65",
 	"wpn_fps_ass_heffy_762_pg_m92",
-	"wpn_fps_ass_heffy_762_pg_rk62"
+	"wpn_fps_ass_heffy_762_pg_rk62",
+	"wpn_fps_ass_heffy_all_pg_ak47"
 }
 akmgrips = {
 	"wpn_fps_ass_heffy_762_pg_akm",
@@ -505,7 +508,7 @@ if self.wpn_fps_ass_heffy_545 then
 	
 	local ak74grips = {
 		"wpn_fps_ass_heffy_all_pg_ak74",
-		"wpn_fps_ass_heffy_545_pg_mpi",
+		"wpn_fps_ass_heffy_545_pg_mpi"
 	}
 	
 	for id, part_id in pairs(ak74grips) do
