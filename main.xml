@@ -1682,7 +1682,7 @@
     </WeaponMod>
 	
 	
-	<Weapon unlock_level="47">
+	<Weapon unlock_level="0">
 		<weapon id="heffy_762" based_on="flint" damage_near="25000" damage_far="40000" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="4" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_762">
 			<stats damage="98" spread="16" spread_moving="15" recoil="13" concealment="15" suppression="8"/>
 			<fire_mode_data fire_rate="0.1"/>
