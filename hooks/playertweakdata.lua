@@ -11,5 +11,6 @@ Hooks:PostHook( PlayerTweakData, "init", "AK47ModStanceTweakData", function(self
 	self.stances.vg_akpack = deep_clone(self.stances.flint)
 	self.stances.vg_akpack.steelsight.shoulders.translation = Vector3(-10.657, 8.046, 2.82)
 	self.stances.vg_akpack.steelsight.shoulders.rotation = Rotation(0.05, 0.05, 0)
+	self.stances.vg_akpack.standard.shoulders.translation = self.stances.vg_akpack.standard.shoulders.translation + Vector3(0, 5, 0)
 
 end )
