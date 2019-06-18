@@ -1469,6 +1469,7 @@
 		<stats concealment="5" reload="2"/>
 		<override_weapon CLIP_AMMO_MAX="5"/>
 		<weapons>
+			<value_node value="wpn_fps_sho_heffy_366"/>
 			<value_node value="wpn_fps_ass_akm"/>
 			<value_node value="wpn_fps_ass_akm_gold"/>
 			<value_node value="wpn_fps_smg_akmsu"/>
@@ -1481,6 +1482,7 @@
 		<stats concealment="4" reload="1"/>
 		<override_weapon CLIP_AMMO_MAX="10"/>
 		<weapons>
+			<value_node value="wpn_fps_sho_heffy_366"/>
 			<value_node value="wpn_fps_ass_akm"/>
 			<value_node value="wpn_fps_ass_akm_gold"/>
 			<value_node value="wpn_fps_smg_akmsu"/>
@@ -1493,6 +1495,7 @@
 		<stats concealment="3"/>
 		<override_weapon CLIP_AMMO_MAX="20"/>
 		<weapons>
+			<value_node value="wpn_fps_sho_heffy_366"/>
 			<value_node value="wpn_fps_ass_akm"/>
 			<value_node value="wpn_fps_ass_akm_gold"/>
 			<value_node value="wpn_fps_smg_akmsu"/>
@@ -1505,6 +1508,7 @@
 		<stats concealment="-3"/>
 		<override_weapon CLIP_AMMO_MAX="40"/>
 		<weapons>
+			<value_node value="wpn_fps_sho_heffy_366"/>
 			<value_node value="wpn_fps_ass_akm"/>
 			<value_node value="wpn_fps_ass_akm_gold"/>
 			<value_node value="wpn_fps_smg_akmsu"/>
@@ -1534,6 +1538,7 @@
 		<stats concealment="3" reload="1"/>
 		<override_weapon CLIP_AMMO_MAX="10"/>
 		<weapons>
+			<value_node value="wpn_fps_sho_heffy_366"/>
 			<value_node value="wpn_fps_ass_akm"/>
 			<value_node value="wpn_fps_ass_akm_gold"/>
 			<value_node value="wpn_fps_smg_akmsu"/>
