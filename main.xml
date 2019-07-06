@@ -735,6 +735,13 @@
 		<stats concealment="-4" damage="0" spread="1" recoil="2"/>
 		<weapon_hold_override bm_w_heffy_762="rpk" bm_w_heffy_gold="rpk"  bm_w_heffy_545="rpk"  bm_w_heffy_556="rpk" />
 		<weapon_stance_override bm_w_heffy_762="vg_akpack" bm_w_heffy_gold="vg_akpack" bm_w_heffy_545="vg_akpack" bm_w_heffy_556="vg_akpack"/> 
+		<weapons>
+			<value_node value="wpn_fps_ass_heffy_939"/>
+			<value_node value="wpn_fps_ass_x_heffy_939"/>
+			<value_node value="wpn_fps_ass_heffy_556"/>
+			<value_node value="wpn_fps_ass_heffy_545"/>
+			<value_node value="wpn_fps_ass_heffy_gold"/>
+		</weapons>
 		<pcs/>
 	</WeaponMod>
 	

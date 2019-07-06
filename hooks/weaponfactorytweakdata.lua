@@ -221,6 +221,7 @@ ak47foregrip = {
 	"wpn_fps_ass_heffy_762_lfg_br_t56",
 	"wpn_fps_ass_heffy_762_lfg_mpi",
 	"wpn_fps_ass_heffy_762_lfg_mpi_wood",
+	"wpn_fps_ass_heffy_762_lfg_md90",
 	"wpn_fps_ass_heffy_762_lfg_amd63"
 }
 all_ak47upperforegrip = {
@@ -429,7 +430,8 @@ heffy762fgs = { --original by 545
 		"wpn_fps_ass_heffy_762_ufg_mpi",
 		"wpn_fps_ass_heffy_762_lfg_mpi_wood",
 		"wpn_fps_ass_heffy_762_ufg_mpi_wood",
-		"wpn_fps_ass_heffy_762_lfg_amd63"
+		"wpn_fps_ass_heffy_762_lfg_amd63",
+		"wpn_fps_ass_heffy_762_lfg_md90"
 	}
 
 
