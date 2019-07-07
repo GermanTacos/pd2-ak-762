@@ -1,0 +1,281 @@
+<table>
+
+	<Weapon unlock_level="0">
+		<weapon id="heffy_762" based_on="flint" damage_near="25000" damage_far="40000" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="4" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_762">
+			<stats damage="98" spread="16" spread_moving="15" recoil="13" concealment="15" suppression="8"/>
+			<fire_mode_data fire_rate="0.1"/>
+			<AMMO_PICKUP>
+					<value_node value="1.5"/>
+					<value_node value="4.0"/>
+			</AMMO_PICKUP>
+			<timers reload_not_empty="2.3" reload_empty="3.4" unequip="0.5" equip="0.7"/>
+			<sounds fire="ak47_fire_single" fire_single="ak47_fire_single" fire_auto="ak47_fire_single" use_fix="true"> 
+				<reload wp_flint_mag_out="wp_heffy_762_mag_out" wp_flint_mag_in="wp_heffy_762_mag_in" wp_flint_cock_pull="wp_heffy_762_cock_pull" wp_flint_cock_release="wp_heffy_762_cock_release"/>
+			</sounds>
+			<animations reload_name_id="flint" equip_id="equip_flint" recoil_steelsight="true"/>
+		</weapon>
+
+		<factory id="wpn_fps_ass_heffy_762" unit="units/mods/weapons/wpn_fps_ass_heffy_762/wpn_fps_ass_heffy_762" stock_adapter="wpn_fps_ass_heffy_all_sad_alpha">
+			
+			<animations fire="recoil" reload="reload" reload_not_empty="reload_not_empty" fire_steelsight="recoil"/>
+			
+			<optional_types>
+				<value_node value="barrel"/>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+				<value_node value="receiver"/>
+				<value_node value="foregrip_lower"/>
+				<value_node value="foregrip_upper"/>
+			</optional_types>
+			<adds/>
+			<override/>	
+			<default_blueprint>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_dummy"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_dummy"/>
+			
+				<value_node value="wpn_fps_ass_heffy_762_ba_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_ch_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_lr_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_fsl_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_rsb_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_tr_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_ur_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_lfg_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_ufg_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_pg_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_ak47"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_chb_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_rs_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_gb_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_int1_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_int2_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_int3_ak47"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ro_akm"/>
+				<value_node value="wpn_fps_ass_heffy_762_fo_akm"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_m_steel_30"/>
+				
+			</default_blueprint>
+
+			<uses_parts>
+			
+				<value_node value="wpn_fps_ass_heffy_762_ba_dummy"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_dummy"/>
+			
+				<value_node value="wpn_fps_ass_heffy_762_ba_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_ch_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_lr_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_fsl_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_rsb_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_tr_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_ur_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_lfg_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_ufg_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_pg_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_ak47"/>
+			
+				<value_node value="wpn_fps_ass_heffy_762_chb_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_rs_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_gb_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_int1_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_int2_ak47"/>
+				<value_node value="wpn_fps_ass_heffy_762_int3_ak47"/>
+				
+	<!--		<value_node value="wpn_fps_ass_heffy_762_lr_t2"/> -->
+				<value_node value="wpn_fps_ass_heffy_762_pg_t2"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_akm"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_akm"/>
+				<value_node value="wpn_fps_ass_heffy_762_ch_akm"/>
+				<value_node value="wpn_fps_ass_heffy_762_lr_akm"/>
+				<value_node value="wpn_fps_ass_heffy_762_ur_akm"/>
+				<value_node value="wpn_fps_ass_heffy_762_lfg_akm"/>
+				<value_node value="wpn_fps_ass_heffy_762_ufg_akm"/>
+				<value_node value="wpn_fps_ass_heffy_762_pg_akm"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_akm"/>
+				<value_node value="wpn_fps_ass_heffy_762_ro_akm"/>
+				<value_node value="wpn_fps_ass_heffy_762_fo_akm"/>
+				<value_node value="wpn_fps_ass_heffy_762_fsl_akm"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_lfg_akm_worn"/>
+				<value_node value="wpn_fps_ass_heffy_762_ufg_akm_worn"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_akm_worn"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_st_akms"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_akmsu"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_akmsu"/>
+				<value_node value="wpn_fps_ass_heffy_762_lr_akmsu"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_akmsu"/>
+				<value_node value="wpn_fps_ass_heffy_762_fsl_akmsu"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_rpk"/>
+				<value_node value="wpn_fps_ass_heffy_762_lfg_rpk"/>
+				<value_node value="wpn_fps_ass_heffy_762_ufg_rpk"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_rpk"/>
+				<value_node value="wpn_fps_ass_heffy_762_bp_rpk"/>
+				<value_node value="wpn_fps_ass_heffy_762_bp_rpk_folded"/>
+				<value_node value="wpn_fps_ass_heffy_762_lr_rpk"/>
+				<value_node value="wpn_fps_ass_heffy_762_ro_rpk"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_lr_ak103"/>
+				<value_node value="wpn_fps_ass_heffy_762_ur_ak103"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_ak103"/>
+				<value_node value="wpn_fps_ass_heffy_762_lfg_ak103"/>
+				<value_node value="wpn_fps_ass_heffy_762_ufg_ak103"/>
+				<value_node value="wpn_fps_ass_heffy_762_pg_ak103"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_ak103"/>
+				<value_node value="wpn_fps_ass_heffy_762_fsl_ak103"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_ak104"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_ak104"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_ak109"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_md90"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_md90"/>
+				<value_node value="wpn_fps_ass_heffy_762_lfg_md90"/> 
+				
+				<value_node value="wpn_fps_ass_heffy_762_lr_wasr"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_vepr"/>
+				<value_node value="wpn_fps_ass_heffy_762_lr_vepr"/>
+		<!--	<value_node value="wpn_fps_ass_heffy_762_lfg_vepr"/> -->
+				<value_node value="wpn_fps_ass_heffy_762_st_vepr"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_t56"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_t56"/>
+				<value_node value="wpn_fps_ass_heffy_762_lfg_bl_t56"/>
+				<value_node value="wpn_fps_ass_heffy_762_ufg_bl_t56"/>
+				<value_node value="wpn_fps_ass_heffy_762_pg_bl_t56"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_bl_t56"/>
+				<value_node value="wpn_fps_ass_heffy_762_lfg_br_t56"/>
+				<value_node value="wpn_fps_ass_heffy_762_ufg_br_t56"/>
+				<value_node value="wpn_fps_ass_heffy_762_pg_br_t56"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_br_t56"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_lfg_mpi"/>
+				<value_node value="wpn_fps_ass_heffy_762_ufg_mpi"/>
+				<value_node value="wpn_fps_ass_heffy_762_pg_mpi"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_mpi"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_2_mpi"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_3_mpi"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_lfg_mpi_wood"/>
+				<value_node value="wpn_fps_ass_heffy_762_ufg_mpi_wood"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_amd63"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_amd63"/>
+				<value_node value="wpn_fps_ass_heffy_762_lfg_amd63"/>
+				<value_node value="wpn_fps_ass_heffy_762_pg_amd63"/>
+				<value_node value="wpn_fps_ass_heffy_762_vg_amd63"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_amd63"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_amd65"/>
+				<value_node value="wpn_fps_ass_heffy_762_pg_amd65"/>
+				<value_node value="wpn_fps_ass_heffy_762_vg_amd65"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_amd65"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_lfg_m70"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_m70"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_m70"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_m92"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_m92"/>
+				<value_node value="wpn_fps_ass_heffy_762_lr_m92"/>
+				<value_node value="wpn_fps_ass_heffy_762_pg_m92"/>
+				<value_node value="wpn_fps_ass_heffy_762_ro_m92"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_tabuk"/>
+				<value_node value="wpn_fps_ass_heffy_762_ch_tabuk"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_tabuk"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_tabuk"/>
+				<value_node value="wpn_fps_ass_heffy_762_sp_tabuk"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ba_rk62"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_rk62"/>
+				<value_node value="wpn_fps_ass_heffy_762_pg_rk62"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_rk62"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_m_steel_5"/>
+				<value_node value="wpn_fps_ass_heffy_762_m_steel_10"/>
+				<value_node value="wpn_fps_ass_heffy_762_m_steel_20"/>
+				<value_node value="wpn_fps_ass_heffy_762_m_steel_30"/>
+				<value_node value="wpn_fps_ass_heffy_762_m_steel_40"/>
+				<value_node value="wpn_fps_ass_heffy_762_m_steel_75"/>
+				<value_node value="wpn_fps_ass_heffy_762_m_proto_30"/>
+				<value_node value="wpn_fps_ass_heffy_762_m_bake_30"/>
+				<value_node value="wpn_fps_ass_heffy_762_m_bake_10"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_ufg_none"/>
+				<value_node value="wpn_fps_ass_heffy_762_fh_none"/>
+				<value_node value="wpn_fps_ass_heffy_762_st_none"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_so_pr"/>
+				
+			<!--<value_node value="wpn_fps_upg_m4_s_standard"/>
+				<value_node value="wpn_fps_upg_m4_s_pts"/>
+				<value_node value="wpn_fps_upg_m4_s_crane"/>
+				<value_node value="wpn_fps_upg_m4_s_mk46"/>
+				<value_node value="wpn_fps_upg_m4_s_ubr"/>
+				<value_node value="wpn_fps_snp_tti_s_vltor"/>
+				-->
+				
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ns_ass_pbs1"/>
+				
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				
+				<value_node value="wpn_fps_upg_o_ak47_scopemount"/>
+				<value_node value="wpn_fps_upg_o_ak47_l_scopemount"/>
+				
+				<value_node value="wpn_fps_ass_heffy_762_fm_m92"/>
+				<value_node value="wpn_fps_ass_heffy_762_fm_tabuk"/>
+				<value_node value="wpn_fps_ass_heffy_762_fm_ty56"/>
+				<value_node value="wpn_fps_ass_heffy_762_fm_amd65"/>
+				<value_node value="wpn_fps_ass_heffy_762_fm_rk62"/>
+				
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				
+			</uses_parts>
+			
+		</factory>
+		<stance>
+			<steelsight>
+				<shoulders rotation="-0.000436332 -1.90386e-007 -0.000436332 -1" translation="-10.247 0.696 3.77"/>
+			</steelsight>
+		</stance>
+		
+	</Weapon>
+
+</table>
