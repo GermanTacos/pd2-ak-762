@@ -479,7 +479,7 @@ end
 
 self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_762" )
 
---https://i.imgur.com/YUjAAWR.png
+--https://i.imgur.com/CCkCUWl.png
 
 --- Compatibility Array Insertion ---
 
