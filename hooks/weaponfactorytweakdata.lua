@@ -481,7 +481,20 @@ self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_762" )
 
 --https://i.imgur.com/YUjAAWR.png
 
+
 --- Compatibility Array Insertion ---
+local ak47_extras_md = {
+	"wpn_fps_ass_heffy_all_fh_krebs",
+	"wpn_fps_ass_heffy_762_fh_tank",
+	"wpn_fps_ass_heffy_762_fh_fun",
+	"wpn_fps_ass_heffy_545_fh_tank",
+	"wpn_fps_ass_heffy_545_fh_fun"
+	}
+for i, md_id in pairs(ak47_extras_md) do
+	if self.parts[md_id] then
+		table.insert(all_ak47ext, md_id)
+	end
+end
 
 if self.wpn_fps_ass_heffy_545 then
 
